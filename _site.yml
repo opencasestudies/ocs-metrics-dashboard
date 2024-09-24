@@ -1,14 +1,11 @@
-name: metricminer dashboard
+name: Open Case Studies metricminer dashboard
 output_dir: 'docs'
 navbar:
-  title: metricminer dashboard
+  title: OCS metricminer dashboard
   left:
   - text: Home
     href: index.html
     icon: fa-home
-  - text: Calendly
-    href: calendly.html
-    icon: fa-calendar
   - text: Citations
     href: citations.html
     icon: fa-scroll
@@ -21,9 +18,6 @@ navbar:
   - text: Google Analytics
     href: googleanalytics.html
     icon: fa-google
-  #- text: Slido
-  #  href: slido.html
-  #  icon: a-square-poll-vertical
   - text: Youtube
     href: youtube.html
     icon: fa-play
