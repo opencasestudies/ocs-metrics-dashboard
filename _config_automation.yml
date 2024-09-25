@@ -41,12 +41,12 @@ github_repos: [
   opencasestudies/ocs-bp-RTC-wrangling, #in OCS Search table
   opencasestudies/ocs-bp-RTC-analysis, #in OCS Search table
   opencasestudies/ocs-bp-co2-emissions, #in OCS Search table
+  FredHutch/ocs-bp-co2-emissions-interactive, #interactive version
   opencasestudies/ocs-bp-diet, #in OCS Search table
   opencasestudies/ocs-bp-air-pollution, #in OCS Search table
   opencasestudies/ocs-healthexpenditure, #in OCS Search table
   opencasestudies/OCS_Guide, #Guide for using OCS in teaching
-  opencasestudies/ocs-template, #OCS template repo (this one or the bp one?)
-  opencasestudies/ocs-bp-template #OCS template repo (this one or the non-bp one?)
+  opencasestudies/ocs-bp-template #OCS template repo
   ]
 github_googlesheet:
 
@@ -56,7 +56,7 @@ ga_property_ids: [ 256941640, 256923228 ]
 ga_googlesheet:
 
 ###### Google Forms ######
-refresh-googleforms: no #are there relevant google forms?
+refresh-googleforms: no
 google_forms: [
   ]
 googleforms_googlesheet:
@@ -74,7 +74,7 @@ video_ids: [ DgzBSOY5Yc8,
              rP5E7GohTiI, #use OCS template
              OHqamzlrnaw, #search for the right OCS for you
              3iFtuDK0o-M, #interactive versions and independent learners
-             Dd4KASCIsNc, #use MakeCaseStudies app (is there a github repo or cran, etc equivalent for this?)
+             Dd4KASCIsNc, #use MakeCaseStudies app
              fVeaVm9g6Kg, #interactive OCS
              j-I0Zgicjsk, #using the TOC
              Z4WZ7A0OZF8 #skipping a section
