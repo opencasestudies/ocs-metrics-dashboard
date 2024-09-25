@@ -56,9 +56,10 @@ ga_property_ids: [ 256941640, 256923228 ]
 ga_googlesheet:
 
 ###### Google Forms ######
-refresh-googleforms: no
-google_forms: [
-  ]
+refresh-googleforms: yes
+google_forms: [ 10CoeNyxuS2CABKNIorQG4iqNuU3GHfjo9P7dmYrjX6o,
+                1yfZVwydD901UEQ7V5vY9p5wJNg55rdh3TselHy4n11k
+              ]
 googleforms_googlesheet:
 
 ###### Slido ######
@@ -67,8 +68,8 @@ drive_id:
 slido_googlesheet:
 
 ###### YouTube ######
-refresh-youtube: yes
-video_ids: [ DgzBSOY5Yc8,
+refresh-youtube: no #will change once I have access
+video_ids: [ DgzBSOY5Yc8, #main video
              MZ0mHQhgPiA, #translation tool
              UFs4qvgTuTw, #modify OCS
              rP5E7GohTiI, #use OCS template
