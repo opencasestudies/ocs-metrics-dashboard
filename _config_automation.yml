@@ -68,7 +68,7 @@ drive_id:
 slido_googlesheet:
 
 ###### YouTube ######
-refresh-youtube: no #will change once I have access
+refresh-youtube: yes
 video_ids: [ DgzBSOY5Yc8, #main video
              MZ0mHQhgPiA, #translation tool
              UFs4qvgTuTw, #modify OCS
