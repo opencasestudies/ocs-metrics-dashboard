@@ -41,7 +41,7 @@ if (yaml$data_dest == "google") {
   lapply(form_names, function(form_name) {
     # Writing the number of responses (e.g., non-empty rows)
     googlesheets4::write_sheet(
-      data.frame("form name" = form_name, "num responses" = nrow(data.frame(google_forms[[form_name]]$answers) %>% dplyr::filter(!if_all(everything(), .fns = is.na)))),
+      data.frame("formName" = form_name, "numResponses" = nrow(data.frame(google_forms[[form_name]]$answers) %>% dplyr::filter(!if_all(everything(), .fns = is.na)))),
       ss = yaml$gf_googlesheet,
       sheet = form_name
     )
@@ -52,7 +52,7 @@ if (yaml$data_dest == "github") {
   lapply(form_names, function(form_name) {
     # Writing the number of responses (e.g., non-empty rows)
     readr::write_tsv(
-      data.frame("form name" = form_name, "num responses" = nrow(data.frame(google_forms[[form_name]]$answers) %>% dplyr::filter(!if_all(everything(), .fns = is.na)))),
+      data.frame("formName" = form_name, "numResponses" = nrow(data.frame(google_forms[[form_name]]$answers) %>% dplyr::filter(!if_all(everything(), .fns = is.na)))),
       file.path(folder_path, paste0(form_name, ".tsv"))
     )
   })
