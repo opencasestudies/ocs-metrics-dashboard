@@ -41,7 +41,7 @@ github_repos: [
   opencasestudies/ocs-bp-RTC-wrangling, #in OCS Search table
   opencasestudies/ocs-bp-RTC-analysis, #in OCS Search table
   opencasestudies/ocs-bp-co2-emissions, #in OCS Search table
-  FredHutch/ocs-bp-co2-emissions-interactive, #interactive version
+  #FredHutch/ocs-bp-co2-emissions-interactive, #interactive version
   opencasestudies/ocs-bp-diet, #in OCS Search table
   opencasestudies/ocs-bp-air-pollution, #in OCS Search table
   opencasestudies/ocs-healthexpenditure, #in OCS Search table
