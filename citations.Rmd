@@ -21,9 +21,9 @@ Total citations per original paper describing OCS:
 ```{r,echo=FALSE, message=FALSE}
 library(dplyr)
 # here we remove duplicates if there are any of the same titles of citing papers for each original paper and then get a count of the number of rows for each original paper (aka how many times it is cited)
-citations %>%
+printr::kable(citations %>%
   distinct(original_paper, cite_titles, .keep_all = TRUE) %>%
-  count(original_paper)
+  count(original_paper))
 ```
 
 Total citations across papers describing OCS:
