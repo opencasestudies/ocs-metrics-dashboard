@@ -18,7 +18,7 @@ yaml <- yaml::read_yaml(file.path(root_dir, "_config_automation.yml"))
 youtube <- readr::read_tsv(file.path("metricminer_data", "youtube", "youtube.tsv"))
 ```
 
-```{r}
+```{r echo= FALSE, message = FALSE, warning = FALSE, out.width = 100%}
 video_id_to_name <- data.frame(id = c("DgzBSOY5Yc8",
                                       "MZ0mHQhgPiA",
                                       "UFs4qvgTuTw",
@@ -62,5 +62,7 @@ youtube %>%
   theme_classic() +
   labs(fill = "") +
   xlab("Video Views") +
-  ylab("")
+  ylab("") +
+  geom_text(aes(label = viewCount, group = name),
+                  hjust = -0.5, size=2)
 ```
