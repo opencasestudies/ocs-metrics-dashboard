@@ -1,5 +1,5 @@
 ---
-title: "OCSData Package Downloads from CRAN"
+title: "OCSdata Package Downloads from CRAN"
 output:
   html_document:
     toc: true
@@ -18,7 +18,7 @@ yaml <- yaml::read_yaml(file.path(root_dir, "_config_automation.yml"))
 cran <- readr::read_tsv(file.path("metricminer_data", "cran", "cran.tsv"))
 ```
 
-CRAN OCSData package downloads over time, summarized by month.
+CRAN OCSdata package downloads over time, summarized by month.
 
 ```{r, echo = FALSE, message = FALSE}
 cran_stats <- cran %>%
@@ -38,7 +38,7 @@ ggplot(cran_stats, aes(Month, monthly_downloads, group=package, color = package)
        color = "R Packages")
 ```
 
-Total CRAN downloads for OCSData:
+Total CRAN downloads for OCSdata:
 
 ```{r echo=FALSE}
 unlist(cran %>% dplyr::summarize(download_total = sum(count)), use.names = FALSE)
