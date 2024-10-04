@@ -40,6 +40,6 @@ ggplot(cran_stats, aes(Month, monthly_downloads, group=package, color = package)
 
 Total CRAN downloads for OCSdata:
 
-```{r echo=FALSE}
-unlist(cran %>% dplyr::summarize(download_total = sum(count)), use.names = FALSE)
+```{r echo=FALSE, results = 'asis'}
+cat(unlist(cran %>% dplyr::summarize(download_total = sum(count)), use.names = FALSE))
 ```
