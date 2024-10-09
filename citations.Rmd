@@ -16,7 +16,7 @@ citations <- readr::read_tsv(file.path("metricminer_data", "citations", "citatio
 
 ```
 
-Total citations per original paper describing OCS:
+### Total citations per original paper describing OCS:
 
 ```{r,echo=FALSE, message=FALSE}
 library(dplyr)
@@ -26,7 +26,7 @@ knitr::kable(citations %>%
   count(original_paper))
 ```
 
-Total citations across papers describing OCS:
+### Total citations across papers describing OCS:
 
 ```{r echo=FALSE, results = 'asis'}
 cat(unlist(citations %>% distinct(original_paper, cite_titles, .keep_all = TRUE) %>% count(original_paper)%>% dplyr::summarize(download_total = sum(n)), use.names = FALSE))

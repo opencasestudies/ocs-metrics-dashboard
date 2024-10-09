@@ -18,6 +18,8 @@ yaml <- yaml::read_yaml(file.path(root_dir, "_config_automation.yml"))
 youtube <- readr::read_tsv(file.path("metricminer_data", "youtube", "youtube.tsv"))
 ```
 
+### Video views
+
 ```{r echo= FALSE, message = FALSE, warning = FALSE, fig.width=13.24, fig.height=6.91}
 video_id_to_name <- data.frame(id = c("DgzBSOY5Yc8",
                                       "MZ0mHQhgPiA",

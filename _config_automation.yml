@@ -21,7 +21,8 @@ calendly_googlesheet:
 refresh-citations: yes
 citation_papers: [
   "https://scholar.google.com/scholar?cites=9780221468138198188",  #tandfonline paper
-  "https://scholar.google.com/scholar?cites=3064856349813099026" ] #f1000 paper
+  "https://scholar.google.com/scholar?cites=3064856349813099026",  #f1000 paper
+  "https://scholar.google.com/scholar?cites=261898094453544371" ]  #Dissertation
 citation_googlesheet:
 
 ###### CRAN ######
