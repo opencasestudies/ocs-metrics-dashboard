@@ -33,6 +33,8 @@ lfs
 Loqui
 metricminer
 NCI
+OCS
+OCSdata
 OTTR
 repo
 Rmd
