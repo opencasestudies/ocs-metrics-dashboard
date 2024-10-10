@@ -4,6 +4,7 @@
 
 library(metricminer)
 library(magrittr)
+library(dplyr)
 
 # Find .git root directory
 root_dir <- rprojroot::find_root(rprojroot::has_dir(".git"))
@@ -25,7 +26,7 @@ auth_from_secret("google",
 setup_folders(
   folder_path = folder_path,
   google_entry = "gf_googlesheet",
-  config_file = yaml_file_path, 
+  config_file = yaml_file_path,
   data_name = "googleforms"
 )
 
@@ -38,8 +39,9 @@ yaml <- yaml::read_yaml(yaml_file_path)
 
 if (yaml$data_dest == "google") {
   lapply(form_names, function(form_name) {
-    # Currently this is writing the responses but you could set change it to save the metadata 
-    googlesheets4::write_sheet(google_forms[[form_name]]$answers,
+    # Writing the number of responses (e.g., non-empty rows)
+    googlesheets4::write_sheet(
+      data.frame("formName" = form_name, "numResponses" = nrow(data.frame(google_forms[[form_name]]$answers) %>% dplyr::filter(!if_all(everything(), .fns = is.na)))),
       ss = yaml$gf_googlesheet,
       sheet = form_name
     )
@@ -48,8 +50,9 @@ if (yaml$data_dest == "google") {
 
 if (yaml$data_dest == "github") {
   lapply(form_names, function(form_name) {
+    # Writing the number of responses (e.g., non-empty rows)
     readr::write_tsv(
-      google_forms[[form_name]]$answers,
+      data.frame("formName" = form_name, "numResponses" = nrow(data.frame(google_forms[[form_name]]$answers) %>% dplyr::filter(!if_all(everything(), .fns = is.na)))),
       file.path(folder_path, paste0(form_name, ".tsv"))
     )
   })
