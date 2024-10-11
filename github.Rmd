@@ -80,6 +80,7 @@ github_timecourse %>%
     ylab("Unique views") +
     xlab("Date") + theme(axis.text.x = element_text(angle = 60, hjust = 1, vjust = 1))
 ```
+
 ### Unique clones over time
 
 ```{r echo=FALSE, hide=TRUE, message=FALSE, warning=FALSE, fig.width = 12.40, fig.height = 6.20}
