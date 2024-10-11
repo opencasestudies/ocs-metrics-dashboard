@@ -67,7 +67,7 @@ github_overall %>%
 
 ### Unique views over time
 
-```{r echo = FALSE, hide = TRUE, message=FALSE, fig.width = 12.40, fig.height = 6.20}
+```{r echo = FALSE, hide = TRUE, message=FALSE, warning=FALSE, fig.width = 12.40, fig.height = 6.20}
 github_timecourse %>%
     mutate(repo = str_replace_all(repo, "opencasestudies/", ""),
            repo_type = case_when(str_detect(repo, "template") ~ "Template",
@@ -82,7 +82,7 @@ github_timecourse %>%
 ```
 ### Unique clones over time
 
-```{r echo=FALSE, hide=TRUE, message=FALSE, fig.width = 12.40, fig.height = 6.20}
+```{r echo=FALSE, hide=TRUE, message=FALSE, warning=FALSE, fig.width = 12.40, fig.height = 6.20}
 github_timecourse %>%
     mutate(repo = str_replace_all(repo, "opencasestudies/", ""),
            repo_type = case_when(str_detect(repo, "template") ~ "Template",
