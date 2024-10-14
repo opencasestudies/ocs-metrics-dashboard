@@ -99,4 +99,18 @@ ga_dimensions %>%
   theme(axis.text.x=element_text(angle=60, hjust=1), legend.position = "none")
 ```
 
+### Countries accessing OCS Resources
 
+```{r echo=FALSE, hide=TRUE, message=FALSE, warning=FALSE}
+countries <- table(ga_dimensions$country) %>% 
+  data.frame() %>% 
+  arrange(-Freq) %>% 
+  filter(!Var1 == "(not set)")
+
+```
+
+`r nrow(countries)` countries are represented in the web traffic data. The top countries with over 100 users are below
+
+```{r echo=FALSE, hide=TRUE, message=FALSE, warning=FALSE}
+knitr::kable(countries$Var1[which(countries$Freq >= 100)])
+```
