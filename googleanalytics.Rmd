@@ -55,7 +55,7 @@ knitr::kable(ga_metrics)
 ga_dimensions %>% 
   filter(str_detect(website, "OCS main")) %>%
   filter(!str_detect(fullPageUrl, "/?q=|localhost|.com|rmd_output")) %>%
-  mutate(month_year = ym(paste0(year, "-", month))) %>%
+  mutate(month_year = lubridate::ym(paste0(year, "-", month))) %>%
   group_by(month_year) %>% 
   count() %>% 
   ggplot(ggplot2::aes(y = n, x = month_year)) + 
@@ -74,7 +74,7 @@ ga_dimensions %>%
   filter(!str_detect(website, "OCS main")) %>%
   filter(str_detect(fullPageUrl, "ocs-bp")) %>%
   filter(!str_detect(fullPageUrl, "rsconnect|interactive")) %>%
-  mutate(month_year = ym(paste0(year, "-", month)),
+  mutate(month_year = lubridate::ym(paste0(year, "-", month)),
     case_study = case_when(str_detect(fullPageUrl, "youth-mental-health") ~ "ocs-bp-youth-mental-health",
                                 str_detect(fullPageUrl, "opioid") ~ "ocs-bp-opioid-rural-urban",
                                 str_detect(fullPageUrl, "obesity") ~ "ocs-bp-rural-and-urban-obesity",
