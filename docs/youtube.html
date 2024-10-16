@@ -11,7 +11,7 @@
 
 
 
-<title>YouTube</title>
+<title>OCS Video Views on YouTube</title>
 
 <script src="site_libs/header-attrs-2.25/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -318,7 +318,7 @@ div.tocify {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">metricminer dashboard</a>
+      <a class="navbar-brand" href="index.html">OCS metricminer dashboard</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
@@ -327,13 +327,6 @@ div.tocify {
     <span class="fa fa-home"></span>
      
     Home
-  </a>
-</li>
-<li>
-  <a href="calendly.html">
-    <span class="fa fa-calendar"></span>
-     
-    Calendly
   </a>
 </li>
 <li>
@@ -383,110 +376,15 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">YouTube</h1>
-<h4 class="date">29 March, 2024</h4>
+<h1 class="title toc-ignore">OCS Video Views on YouTube</h1>
+<h4 class="date">10 October, 2024</h4>
 
 </div>
 
 
-<div id="preview" class="section level2">
-<h2>Preview</h2>
-</div>
-<div id="data-information" class="section level2">
-<h2>Data information</h2>
-<ul>
-<li><code>viewCount</code> how many times has the video been
-viewed?</li>
-<li><code>likeCount</code> how many times has the video been liked?</li>
-<li><code>dislikeCount</code> - how many times has the video been
-disliked?</li>
-<li><code>favoriteCount</code> - how many times has the video been
-favorited?</li>
-<li><code>commentCount</code> - how many comments on the video?</li>
-</ul>
-<pre class="r"><code>knitr::kable(youtube)</code></pre>
-<table>
-<colgroup>
-<col width="16%" />
-<col width="13%" />
-<col width="13%" />
-<col width="18%" />
-<col width="19%" />
-<col width="18%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">video</th>
-<th align="right">viewCount</th>
-<th align="right">likeCount</th>
-<th align="right">dislikeCount</th>
-<th align="right">favoriteCount</th>
-<th align="right">commentCount</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">XN_QPRrJZAw</td>
-<td align="right">3</td>
-<td align="right">0</td>
-<td align="right">0</td>
-<td align="right">0</td>
-<td align="right">0</td>
-</tr>
-<tr class="even">
-<td align="left">YkYnni-WuaQ</td>
-<td align="right">21</td>
-<td align="right">0</td>
-<td align="right">0</td>
-<td align="right">0</td>
-<td align="right">0</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="setting-up-youtube" class="section level2">
-<h2>Setting up YouTube</h2>
-<p><a href="#setting-up-google-authentication">Follow the steps from the
-above section to authenticate Google</a> – make sure that the account
-you have authenticated for has access to the YouTube you wish to
-collect.</p>
-<p>Go to a video you’d like to collect data from. The URL should look
-something like this:</p>
-<pre><code>https://www.youtube.com/watch?v=&lt;YOUTUBE_VIDEO_ID_HERE&gt;</code></pre>
-<p>Extract the Youtube Video ID from the URL and put it in the
-<code>video_ids</code> section of the
-<code>_config_automation.yml</code> file. Delete the example IDs we have
-put there as placeholders. Do this for each video you’d like to collect
-data from and separate the IDs with commas.</p>
-<pre><code>###### YouTube ######
-refresh-youtube: yes
-video_ids: [ XN_QPRrJZAw, YkYnni-WuaQ ]
-youtube_googlesheet:</code></pre>
-<ul class="task-list">
-<li><input type="checkbox" />In the <code>config_automation.yml</code>
-file, make sure that <code>refresh-slido</code> is set to “yes”.</li>
-<li><input type="checkbox" />Optionally, if you are saving data to
-Google, specify a googlesheet ID in <code>youtube_googlesheet</code>
-that you’d like the GitHub data to be saved to. This will only be
-relevant if you’ve set <code>data_dest</code> to
-<code>google</code>.</li>
-</ul>
-</div>
-<div id="customizing-the-youtube-data" class="section level2">
-<h2>Customizing the YouTube Data</h2>
-<p>In order to customize the data you are downloading from your YouTube
-you can modify the <code>refresh-scripts/refresh-youtube.R</code> script
-in your repository.</p>
-<p>You can take a look at the <a
-href="https://hutchdatascience.org/metricminer/articles/getting-started.html"><code>metricminer</code>
-R package documentation</a> for more details about the functions and
-what is possible.</p>
-<p>If you have a metric need that is not currently fulfilled by
-<code>metricminer</code> or <code>metricminer-dashboard</code> we
-encourage you to <a
-href="https://github.com/fhdsl/metricminer/issues/new/choose">file a
-GitHub issue with us and let us know about your new feature idea (or bug
-report)</a>.</p>
+<div id="video-views" class="section level3">
+<h3>Video views</h3>
+<p><img src="youtube_files/figure-html/unnamed-chunk-2-1.png" width="1271.04" /></p>
 </div>
 
 
