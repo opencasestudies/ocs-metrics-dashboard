@@ -1,6 +1,6 @@
 ---
-title: "GitHub"
-output: 
+title: "OCS Repos on GitHub"
+output:
   html_document:
     toc: true
     toc_float: true
@@ -8,8 +8,6 @@ output:
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 
 ---
-
-## Preview
 
 ```{r, echo = FALSE, hide = TRUE, message=FALSE, warning = FALSE}
 library(ggplot2)
@@ -21,77 +19,82 @@ yaml <- yaml::read_yaml(file.path(root_dir, "_config_automation.yml"))
 ## For github
 github_overall <- readr::read_tsv(file.path("metricminer_data", "github", "github.tsv"))
 github_timecourse <- readr::read_tsv(file.path("metricminer_data", "github", "github_timecourse.tsv"))
+```
+## Snapshot metrics
 
-## For google
-# github_overall <- googlesheets4::read_sheet(yaml$github_googlesheet, sheet = "overall_stats")
-# github_timecourse <- googlesheets4::read_sheet(yaml$github_googlesheet, sheet = "timecourse")
+### Number of forks and stars
+
+```{r echo=FALSE, hide=TRUE, message=FALSE, warning=FALSE, fig.width = 10.06, fig.height = 6.29}
+github_overall %>%
+     select(repo_name, num_forks, num_stars) %>%
+     replace_na(list(num_forks = 0)) %>%
+     pivot_longer(c("num_forks", "num_stars"), values_to = "metric_value", names_to = "which_metric") %>%
+     mutate(repo = str_replace_all(repo_name, "opencasestudies/", ""),
+            repo_type = case_when(str_detect(repo_name, "template") ~ "Template",
+                                  str_detect(repo_name, "ocs-") ~ "Case Study",
+                                  str_detect(repo_name, "_Guide") ~ "Guide"),
+            which_metric = str_replace_all(which_metric, "num_", "")) %>%
+     ggplot(aes(y = reorder(repo, metric_value), x = metric_value, fill=repo_type)) +
+     facet_wrap(~which_metric) +
+     geom_bar(stat = "identity") +
+     theme_classic() +
+     labs(fill = "") +
+     xlab("") +
+     ylab("opencasestudies organization repository") +
+     geom_text(aes(label = metric_value, group = repo),
+               hjust = -0.5, size=3)
 ```
 
-Contributions to a repository example:
+### Number of contributors:
 
-```{r echo = FALSE, hide = TRUE, message=FALSE, warning = FALSE}
-github_overall %>% 
-  ggplot(aes(x = repo_name, y = total_contributions)) + 
-  geom_bar(stat = "identity", fill = "lavender") + 
-  theme_classic()
+```{r echo = FALSE, hide = TRUE, message=FALSE, warning = FALSE, fig.width = 9.22, fig.height = 6.29}
+github_overall %>%
+  mutate(repo = str_replace_all(repo_name, "opencasestudies/", ""),
+         repo_type = case_when(str_detect(repo_name, "template") ~ "Template",
+                              str_detect(repo_name, "ocs-") ~ "Case Study",
+                              str_detect(repo_name, "_Guide") ~ "Guide")) %>%
+  ggplot(aes(y = reorder(repo, num_contributors), x = num_contributors, fill=repo_type)) +
+  geom_bar(stat = "identity") +
+  theme_classic() +
+  labs(fill = "") +
+  xlab("Number of Contributors") +
+  ylab("opencasestudies organization repository") +
+  geom_text(aes(label = num_contributors, group = repo),
+                  hjust = -0.5, size=3)
 ```
 
-Views of a GitHub Repository over time 
+<!---
+## Timecourse metrics
 
-```{r echo = FALSE, hide = TRUE, message=FALSE}
-github_timecourse %>% 
-  ggplot(aes(x = timestamp, y = count_views, fill = repo, color = repo)) + 
-  geom_line(stat = "identity") + 
-  theme_classic() + 
-  ylab("date")
+### Unique views over time
+
+```{r echo = FALSE, hide = TRUE, message=FALSE, warning=FALSE, fig.width = 12.40, fig.height = 6.20}
+github_timecourse %>%
+    mutate(repo = str_replace_all(repo, "opencasestudies/", ""),
+           repo_type = case_when(str_detect(repo, "template") ~ "Template",
+                                 str_detect(repo, "ocs-") ~ "Case Study",
+                                 str_detect(repo, "_Guide") ~ "Guide")) %>%
+    ggplot(aes(x = timestamp, y = uniques_views, fill = repo_type, color = repo_type)) +
+    facet_wrap(~repo) +
+    geom_line(stat = "identity") +
+    theme_classic() +
+    ylab("Unique views") +
+    xlab("Date") + theme(axis.text.x = element_text(angle = 60, hjust = 1, vjust = 1))
 ```
 
-## Data information 
+### Unique clones over time
 
-Data information for `github overall data`:
-
-- `num_forks` shows the number of times this repo has been forked. NA means it has never been forked. 
-- `num_contributors` how many people have contributed to this repo
-- `num_stars` how many people have starred this repo?
-- `health_percentage` what percentage of ["good software health" items as described by GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/about-community-profiles-for-public-repositories) does this repo have? 
-
-```{r, message=FALSE}
-knitr::kable(github_overall)
+```{r echo=FALSE, hide=TRUE, message=FALSE, warning=FALSE, fig.width = 12.40, fig.height = 6.20}
+github_timecourse %>%
+    mutate(repo = str_replace_all(repo, "opencasestudies/", ""),
+           repo_type = case_when(str_detect(repo, "template") ~ "Template",
+                                 str_detect(repo, "ocs-") ~ "Case Study",
+                                 str_detect(repo, "_Guide") ~ "Guide")) %>%
+    ggplot(aes(x = timestamp, y = uniques_clones, fill = repo_type, color = repo_type)) +
+    facet_wrap(~repo) +
+    geom_line(stat = "identity") +
+    theme_classic() +
+    ylab("Unique clones") +
+    xlab("Date") + theme(axis.text.x = element_text(angle = 60, hjust = 1, vjust = 1))
 ```
-
-Data information for `github timecourse`:
-
-- `timestamp` shows the date the counts correspond to
-- `count_clones` tells the number of clones made on this day. NAs generally indicate no one cloned the repository that day. 
-- `unique_clones` tells how many people did these clones come from? NAs generally indicate no one cloned the repository that day.
-- `count_views` how many views did the repo get on this day? NAs generally indicate no one viewed the repository that date
-- `unique_views` how many people were those views from? NAs generally indicate no one viewed the repository that date
-
-```{r, message=FALSE}
-knitr::kable(github_timecourse)
-```
-
-## Setting up GitHub
-
-At this point you should already have your GitHub authorization set up for your metricminer dashboard by having [followed the instructions above.](#setting-up-your-dashboard-repository).
-
-In the `_config_automation.yml` you will need to specify items in the GitHub section.
-```
-###### GitHub ######
-refresh-github: yes
-github_repos: [ fhdsl/metricminer, fhdsl/metricminer.org ]
-github_googlesheet:
-```
-
-- [ ] In the `_config_automation.yml` file, make sure that `refresh-github` is set to "yes".
-- [ ] In `github_repos` of your `_config_automation.yml`, specify the names of the repositories you'd like to collect data from in `github_repos`. Make sure it includes the `owner/repository` e.g. `fhdsl/metricminer` not just `metricminer`. Commas need to separate the repositories. Delete the example repositories we put there.
-- [ ] Optionally, if you are saving data to Google, specify a googlesheet ID in `github_googlesheet` you'd like the GitHub data to be saved to. This will only be relevant if you've set `data_dest` to `google`.
-
-## Customizing GitHub Data 
-
-In order to customize the data you are downloading from GitHub you can modify the 
-`refresh-scripts/refresh-github.R` script in your repository. 
-
-You can take a look at the [`metricminer` R package documentation](https://hutchdatascience.org/metricminer/articles/getting-started.html) for more details about the functions and what is possible. 
-
-If you have a metric need that is not currently fulfilled by `metricminer` or `metricminer-dashboard` we encourage you to [file a GitHub issue with us and let us know about your new feature idea (or bug report)](https://github.com/fhdsl/metricminer/issues/new/choose). 
+-->

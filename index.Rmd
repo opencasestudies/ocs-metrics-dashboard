@@ -16,25 +16,6 @@ Open Case Studies (OCS) ... Filler Text
 
 Filler Text
 
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
-
-  - [Setting up your dashboard repository](#setting-up-your-dashboard-repository)
-  - [Setting up your config file](#setting-up-your-config-file)
-    - [Overall settings](#overall-settings)
-    - [Where your data are saved](#where-your-data-are-saved)
-    - [Setting up Google Authentication](#setting-up-google-authentication)
-    - [Setting up Calendly](#setting-up-calendly)
-    - [Setting up CRAN](#setting-up-cran)
-    - [Setting up GitHub](#setting-up-github)
-    - [Setting up Google Analytics](#setting-up-google-analytics)
-    - [Setting up Google Forms](#setting-up-google-forms)
-    - [Setting up Slido](#setting-up-slido)
-    - [Setting up YouTube](#setting-up-youtube)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
 ---
 This dashboard uses the [metricminer-dashboard template](https://github.com/fhdsl/metricminer-dashboard).
 
