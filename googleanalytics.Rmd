@@ -52,7 +52,7 @@ knitr::kable(ga_metrics)
 
 ### Main Open Case Studies Website
 
-```{r echo=FALSE, hide=TRUE, message=FALSE, warning=FALSE, fig.height = 8.89, fig.width = 6.20}
+```{r echo=FALSE, hide=TRUE, message=FALSE, warning=FALSE, fig.height = 6.20, fig.width = 8.89}
 ga_dimensions %>% 
   filter(str_detect(website, "OCS main")) %>%
   filter(!str_detect(fullPageUrl, "/?q=|localhost|.com|rmd_output")) %>%
