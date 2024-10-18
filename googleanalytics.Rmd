@@ -44,7 +44,7 @@ ga_metric_streams %>%
 
 ### Main Webpage and Pooled Across Case Studies
 
-```{r echo=FALSE, hide=TRUE, message=FALSE, warning=FALSE}
+```{r echo=FALSE, hide=TRUE, message=FALSE, warning=FALSE, out.width = "100%"}
 knitr::kable(ga_metrics)
 ```
 
@@ -70,7 +70,7 @@ ga_dimensions %>%
 
 ### Case Studies
 
-```{r echo=FALSE, hide=TRUE, message=FALSE, warning=FALSE, fig.height = 8.89, fig.width = 6.20}
+```{r echo=FALSE, hide=TRUE, message=FALSE, warning=FALSE, fig.height = 5.94, fig.width = 8.91}
 ga_dimensions %>%
   filter(!str_detect(website, "OCS main")) %>%
   filter(str_detect(fullPageUrl, "ocs-bp")) %>%

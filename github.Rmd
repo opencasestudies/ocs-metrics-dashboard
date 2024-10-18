@@ -63,6 +63,7 @@ github_overall %>%
                   hjust = -0.5, size=3)
 ```
 
+<!---
 ## Timecourse metrics
 
 ### Unique views over time
@@ -96,3 +97,4 @@ github_timecourse %>%
     ylab("Unique clones") +
     xlab("Date") + theme(axis.text.x = element_text(angle = 60, hjust = 1, vjust = 1))
 ```
+-->
