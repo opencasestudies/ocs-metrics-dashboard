@@ -135,14 +135,16 @@ countries <- rbind(data.frame(countries[-row_indices_oi, ]) %>% `colnames<-`(c("
 ### Make sure all data has a corresponding entry in the map data
 whichDifName <- which(unlist(lapply(1:nrow(countries), function(x) !(countries$Country[x] %in% world_data$region))))
 
-if (!length(whichDifName) > 0){
+if ((length(whichDifName) > 0)){
   print("There are entries in the GA data that don't have corresponding entries in in the world map data")
   knitr::kable(countries$Country[whichDifName])
 }
 
 ### Count number of entries per country
 countries %<>%
-  group_by(Country) %>% count()
+  group_by(Country) %>% 
+  count() %>%
+  arrange(-n)
 
 ### Merge with world map data and plot, coloring by number of visits
 merged_data <- merge(world_data, countries, by.x = "region", by.y = "Country", all.x = TRUE)
