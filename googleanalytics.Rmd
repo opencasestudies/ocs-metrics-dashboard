@@ -10,7 +10,7 @@ date: "`r format(Sys.time(), '%d %B, %Y')`"
 
 ```{r, echo = FALSE, hide = TRUE, message = FALSE}
 
-install.packages("maps")
+install.packages(c("maps", "viridis"))
 
 library(lubridate)
 library(tidyverse)
