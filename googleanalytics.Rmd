@@ -11,6 +11,8 @@ date: "`r format(Sys.time(), '%d %B, %Y')`"
 ```{r, echo = FALSE, hide = TRUE, message = FALSE}
 library(lubridate)
 library(tidyverse)
+library(maps)
+library(viridis)
 
 root_dir <- rprojroot::find_root(rprojroot::has_dir(".git"))
 yaml <- yaml::read_yaml(file.path(root_dir, "_config_automation.yml"))
@@ -101,16 +103,65 @@ ga_dimensions %>%
 
 ### Countries accessing OCS Resources
 
-```{r echo=FALSE, hide=TRUE, message=FALSE, warning=FALSE}
-countries <- table(ga_dimensions$country) %>% 
-  data.frame() %>% 
-  arrange(-Freq) %>% 
-  filter(!Var1 == "(not set)")
+```{r echo=FALSE, hide=TRUE, message=FALSE, warning=FALSE, fig.width = 12.07, fig.height=6.64}
+world_data <- map_data("world")
 
+countries <- ga_dimensions$country %>%
+  data.frame() %>% `colnames<-`(c("Country")) %>%
+  filter(!Country == "(not set)") %>%
+  mutate(Country = recode(Country, "United States" = "USA",
+                             "United Kingdom" = "UK",
+                        "Türkiye" = "Turkey",
+                        "U.S. Virgin Islands" = "Virgin Islands",
+                        "Hong Kong" = "China",
+                        "Bosnia & Herzegovina" = "Bosnia and Herzegovina",
+                        "Congo - Kinshasa" = "Democratic Republic of the Congo",
+                        "Czechia" = "Czech Republic",
+                        "Eswatini" = "Swaziland",
+                        "Macao" = "China",
+                        "Myanmar (Burma)" = "Myanmar",
+                        "Réunion" = "Reunion"
+                        )) 
+
+row_indices_oi <- which(str_detect(countries$Country, "Kitts|Vincent|Trinidad"))
+valuesOI <- countries[row_indices_oi,]
+countries <- rbind(data.frame(countries[-row_indices_oi, ]) %>% `colnames<-`(c("Country")),
+                   data.frame(Country = unlist(valuesOI %>% str_split(" & ")) %>% str_replace(., "St.", "Saint"))
+                  )
+
+### Make sure all data has a corresponding entry in the map data
+whichDifName <- which(unlist(lapply(1:nrow(countries), function(x) !(countries$Country[x] %in% world_data$region))))
+
+if (!length(whichDifName) > 0){
+  message("There are entries in the GA data that don't have corresponding entries in in the world map data")
+  knitr::kable(countries$Country[whichDifName])
+}
+
+### Count number of entries per country
+countries %<>%
+  group_by(Country) %>% count()
+
+### Merge with world map data and plot, coloring by number of visits
+merged_data <- merge(world_data, countries, by.x = "region", by.y = "Country", all.x = TRUE)
+
+ggplot(merged_data,
+       aes(map_id = region)) +
+geom_map(data = merged_data,
+         map = world_data,
+         aes(x = long, y = lat, map_id = region, fill=n)) +
+  scale_fill_gradientn(colours=rev(magma(6)))  + 
+  labs(fill = "Number of Interactions") +
+  theme(panel.background = element_blank(), 
+        axis.text.x = element_blank(), 
+        axis.text.y = element_blank(), 
+        axis.title.x = element_blank(), 
+        axis.title.y = element_blank())
 ```
+
+In the above map, gray represents no interaction data for that country.
 
 `r nrow(countries)` countries are represented in the web traffic data. The top countries with over 100 users are below
 
 ```{r echo=FALSE, hide=TRUE, message=FALSE, warning=FALSE}
-knitr::kable(countries$Var1[which(countries$Freq >= 100)])
+knitr::kable(countries$Country[which(countries$n >= 100)])
 ```
