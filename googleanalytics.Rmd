@@ -154,7 +154,8 @@ ggplot(merged_data,
 geom_map(data = merged_data,
          map = world_data,
          aes(x = long, y = lat, map_id = region, fill=n)) +
-  scale_fill_gradientn(colours=rev(magma(6)))  + 
+  #scale_fill_gradientn(colours=rev(magma(6)))  + 
+  scale_fill_gradient2(low = "#FCFDBFFF", mid = "#FE9F6DFF", high=muted("#DE4968FF"), midpoint = floor(max(merged_data$n, na.rm=TRUE)/2), na.value = "#bebebe") +
   labs(fill = "Number of Interactions") +
   theme(panel.background = element_blank(), 
         axis.text.x = element_blank(), 
