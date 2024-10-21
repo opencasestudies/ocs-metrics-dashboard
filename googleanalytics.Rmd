@@ -133,7 +133,7 @@ countries <- rbind(data.frame(countries[-row_indices_oi, ]) %>% `colnames<-`(c("
 whichDifName <- which(unlist(lapply(1:nrow(countries), function(x) !(countries$Country[x] %in% world_data$region))))
 
 if (!length(whichDifName) > 0){
-  message("There are entries in the GA data that don't have corresponding entries in in the world map data")
+  print("There are entries in the GA data that don't have corresponding entries in in the world map data")
   knitr::kable(countries$Country[whichDifName])
 }
 
