@@ -170,5 +170,5 @@ In the above map, gray represents no interaction data for that country.
 `r nrow(countries)` countries are represented in the web traffic data. The top countries with over 100 users are below
 
 ```{r echo=FALSE, hide=TRUE, message=FALSE, warning=FALSE}
-knitr::kable(countries$Country[which(countries$n >= 100)])
+knitr::kable(countries$Country[which(countries$n >= 100)], col.names=c("Country"))
 ```
