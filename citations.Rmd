@@ -12,7 +12,7 @@ date: "`r format(Sys.time(), '%d %B, %Y')`"
 root_dir <- rprojroot::find_root(rprojroot::has_dir(".git"))
 yaml <- yaml::read_yaml(file.path(root_dir, "_config_automation.yml"))
 
-citations <- readr::read_tsv(file.path("metricminer_data", "citations", "citations.tsv"))
+citations <- readr::read_tsv(file.path("metricminer_data", "citations", "citation.tsv"))
 
 ```
 
