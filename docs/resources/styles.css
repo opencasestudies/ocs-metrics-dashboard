@@ -1,9 +1,24 @@
 
 /* To add some space below the navigation bar */
 
- body {
-  margin-top: 100px;
+body {
+ margin-top: 100px;
+ font-family: Helvetica;
+ font-size: 13pt;
 }
+
+
+.square{ 
+    left: 15px;
+  padding: 40px 20px;
+  background: #24898c;
+  font-family: Helvetica;
+  color: white;
+  font-size: 16pt;
+
+}
+
+
 
 
 /* add some color - if you want color behind a major point on your website */
