@@ -20,7 +20,7 @@ calendly_googlesheet:
 ###### Citations ######
 refresh-citations: yes
 citation_papers: [
-  "https://scholar.google.com/scholar?cites=9780221468138198188",  #tandfonline paper
+  "https://scholar.google.com/scholar?cites=9780221468138198188",  #OCS paper
   "https://scholar.google.com/scholar?cites=3064856349813099026",  #f1000 paper
   "https://scholar.google.com/scholar?cites=261898094453544371" ]  #Dissertation
 citation_googlesheet:
@@ -42,7 +42,7 @@ github_repos: [
   opencasestudies/ocs-bp-RTC-wrangling, #in OCS Search table
   opencasestudies/ocs-bp-RTC-analysis, #in OCS Search table
   opencasestudies/ocs-bp-co2-emissions, #in OCS Search table
-  #FredHutch/ocs-bp-co2-emissions-interactive, #interactive version
+  FredHutch/ocs-bp-co2-emissions-interactive, #interactive version
   opencasestudies/ocs-bp-diet, #in OCS Search table
   opencasestudies/ocs-bp-air-pollution, #in OCS Search table
   opencasestudies/ocs-healthexpenditure, #in OCS Search table
