@@ -30,13 +30,13 @@ ga_link_clicks <- readr::read_tsv(file.path("metricminer_data", "ga", "ga_link_c
 
 ## Engagement statistics
 
-```{r}
+```{r, echo=FALSE}
 knitr::include_graphics("resources/images/plot_session_overall.png")
 ```
 
 ### Case study specific
 
-```{r}
+```{r, echo = FALSE}
 knitr::include_graphics("resources/images/plot_session_bycasestudy.png")
 ```
 
