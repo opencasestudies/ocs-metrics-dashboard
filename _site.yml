@@ -24,6 +24,7 @@ navbar:
 
 output:
   html_document:
+    css: resources/styles.css
     theme: cosmo
     lib_dir: site_libs
     self_contained: no
