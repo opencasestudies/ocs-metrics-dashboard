@@ -1,7 +1,7 @@
 name: Open Case Studies metricminer dashboard
 output_dir: 'docs'
 navbar:
-  title: OCS metricminer dashboard
+  title: OCS Metric Dashboard
   left:
   - text: Home
     href: index.html
