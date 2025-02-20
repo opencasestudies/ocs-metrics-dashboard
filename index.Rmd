@@ -1,23 +1,20 @@
----
-title: "**Open Case Studies: Metric Dashboard**"
-output:
-  html_document
----
 
-<img src = "resources/images/ocs_icon-192.png" width = 200>
+<div class="square">
+<center><img src = "https://opencasestudies.github.io/img/icon.png" width = 200 ></center>
 
-## About
+<center> Metrics Dashboard</center>
+</div>
 
-### Open Case Studies
+<br>
+<br>
 
-Open Case Studies (OCS) ... Filler Text
+This website shows metrics related to the [Open Case Studies project (OCS)](https://www.opencasestudies.org/). 
 
-### This dashboard
+OCS is an educational archive of data analysis guides using real-world data to help learners engage with data science and statistics topics.
 
-Filler Text
 
----
-This dashboard uses the [metricminer-dashboard template](https://github.com/fhdsl/metricminer-dashboard).
+
+This dashboard was made using the [metricminer-dashboard template](https://github.com/fhdsl/metricminer-dashboard) and [metricminer](https://hutchdatascience.org/metricminer/articles/getting-started.html).
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-951TGMSPH7"></script>
