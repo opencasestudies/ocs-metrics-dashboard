@@ -1,15 +1,16 @@
-repo_name	num_forks	num_contributors	total_contributions	num_stars	health_percentage
-opencasestudies/ocs-bp-school-shootings-dashboard	NA	6	121	0	12
-opencasestudies/ocs-bp-youth-disconnection	2	7	122	0	25
-opencasestudies/ocs-bp-opioid-rural-urban	3	7	81	2	12
-opencasestudies/ocs-bp-vaping-case-study	1	7	143	3	12
-opencasestudies/ocs-bp-youth-mental-health	NA	8	98	0	12
-opencasestudies/ocs-bp-rural-and-urban-obesity	5	8	172	3	25
-opencasestudies/ocs-bp-RTC-wrangling	NA	2	44	0	12
-opencasestudies/ocs-bp-RTC-analysis	3	6	71	2	12
-opencasestudies/ocs-bp-co2-emissions	5	6	100	0	12
-opencasestudies/ocs-bp-diet	1	6	72	2	12
-opencasestudies/ocs-bp-air-pollution	5	5	112	3	12
-opencasestudies/ocs-healthexpenditure	9	5	46	7	25
-opencasestudies/OCS_Guide	2	7	645	2	75
-opencasestudies/ocs-bp-template	NA	2	16	0	12
+num_stars	num_forks	num_contributors	total_contributors
+NA	NA	6	121
+NA	2	7	122
+2	3	7	81
+3	1	7	143
+NA	NA	8	98
+2	5	8	172
+NA	NA	2	44
+2	3	6	71
+NA	5	6	100
+NA	NA	3	20
+2	1	6	72
+3	5	5	112
+7	9	5	46
+2	2	7	645
+NA	NA	2	16
