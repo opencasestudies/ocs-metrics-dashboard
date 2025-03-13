@@ -20,45 +20,67 @@ calendly_googlesheet:
 ###### Citations ######
 refresh-citations: yes
 citation_papers: [
-  "https://scholar.google.com/scholar?cites=6140457238337460780",
-  "https://scholar.google.com/scholar?cites=15945159957067506879" ]
+  "https://scholar.google.com/scholar?cites=9780221468138198188",  #tandfonline paper
+  "https://scholar.google.com/scholar?cites=3064856349813099026",  #f1000 paper
+  "https://scholar.google.com/scholar?cites=261898094453544371" ]  #Dissertation
 citation_googlesheet:
 
 ###### CRAN ######
 refresh-cran: yes
-cran_packages: [ metricminer, ottrpal ]
+cran_packages: [ OCSdata ]
 cran_googlesheet:
 
 ###### GitHub ######
 refresh-github: yes
 github_repos: [
-  fhdsl/metricminer,
-  fhdsl/metricminer-dashboard,
-  jhudsl/OTTR_Template,
-  jhudsl/OTTR_Template_Website
+  opencasestudies/ocs-bp-school-shootings-dashboard, #in OCS Search table
+  opencasestudies/ocs-bp-youth-disconnection, #in OCS Search table
+  opencasestudies/ocs-bp-opioid-rural-urban, #in OCS Search table
+  opencasestudies/ocs-bp-vaping-case-study, #in OCS Search table
+  opencasestudies/ocs-bp-youth-mental-health, #in OCS Search table
+  opencasestudies/ocs-bp-rural-and-urban-obesity, #in OCS Search table
+  opencasestudies/ocs-bp-RTC-wrangling, #in OCS Search table
+  opencasestudies/ocs-bp-RTC-analysis, #in OCS Search table
+  opencasestudies/ocs-bp-co2-emissions, #in OCS Search table
+  #FredHutch/ocs-bp-co2-emissions-interactive, #interactive version
+  opencasestudies/ocs-bp-diet, #in OCS Search table
+  opencasestudies/ocs-bp-air-pollution, #in OCS Search table
+  opencasestudies/ocs-healthexpenditure, #in OCS Search table
+  opencasestudies/OCS_Guide, #Guide for using OCS in teaching
+  opencasestudies/ocs-bp-template #OCS template repo
   ]
 github_googlesheet:
 
 ###### Google Analytics ######
 refresh-ga: yes
-ga_property_ids: [ 422671031, 422558989 ]
+ga_property_ids: [ 256941640, 256923228 ]
 ga_googlesheet:
 
 ###### Google Forms ######
 refresh-googleforms: yes
-google_forms: [
-  1pbFfgUPYH2w9zEoCDjCa4HFOxzEhGOseufw28Xxmd-o,
-  1JjmsiuVoGSxvl-1M_oWittcftO955tijzeNc-cgJlo8 ]
+google_forms: [ 10CoeNyxuS2CABKNIorQG4iqNuU3GHfjo9P7dmYrjX6o,
+                1yfZVwydD901UEQ7V5vY9p5wJNg55rdh3TselHy4n11k
+              ]
 googleforms_googlesheet:
 
 ###### Slido ######
 refresh-slido: no
-drive_id: 1XWXHHyj32Uw_UyaUJrqp6S--hHnM0-7l
+drive_id:
 slido_googlesheet:
 
 ###### YouTube ######
 refresh-youtube: yes
-video_ids: [ XN_QPRrJZAw, YkYnni-WuaQ ]
+video_ids: [ DgzBSOY5Yc8, #main video
+             MZ0mHQhgPiA, #translation tool
+             UFs4qvgTuTw, #modify OCS
+             rP5E7GohTiI, #use OCS template
+             OHqamzlrnaw, #search for the right OCS for you
+             3iFtuDK0o-M, #interactive versions and independent learners
+             Dd4KASCIsNc, #use MakeCaseStudies app
+             fVeaVm9g6Kg, #interactive OCS
+             j-I0Zgicjsk, #using the TOC
+             Z4WZ7A0OZF8 #skipping a section
+           ]
 youtube_googlesheet:
 
 ################## DOCKER #######################
