@@ -25,7 +25,7 @@ auth_from_secret("google",
 auth_from_secret("github", token = Sys.getenv("METRICMINER_GITHUB_PAT"))
 
 # Read the data
-gh_metrics <- get_multiple_repos_metrics(repo_names = yaml$github_repos)
+gh_metrics <- get_multiple_repos_metrics(repo_names = yaml$github_repos, time_course = FALSE, github_stats = c("stars", "forks", "contributors"))
 gh_timecourse <- get_multiple_repos_metrics(repo_names = yaml$github_repos, time_course = TRUE)
 
 setup_folders(
