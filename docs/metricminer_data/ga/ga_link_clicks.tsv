@@ -2,6 +2,7 @@ website	linkUrl
 OCS main - GA4	
 OCS main - GA4	
 OCS main - GA4	http://clustrmaps.com/?utm_source=widget&utm_medium=js_widget&utm_campaign=widget_ctr
+OCS main - GA4	http://clustrmaps.com/site/1bexa
 OCS main - GA4	http://clustrmaps.com/site/1bexa?utm_source=widget&utm_campaign=widget_ctr
 OCS main - GA4	http://cs109.github.io/2014/
 OCS main - GA4	http://datasciencelabs.github.io/2016/
@@ -91,6 +92,7 @@ Static case study streams	https://cdiac.ess-dive.lbl.gov/
 Static case study streams	https://chicagounbound.uchicago.edu/cgi/viewcontent.cgi?article=1150&context=law_and_economics
 Static case study streams	https://cloud.google.com/maps-platform/
 Static case study streams	https://content.apa.org/record/2019-12578-001
+Static case study streams	https://cran.r-project.org/
 Static case study streams	https://cran.r-project.org/package=arcos
 Static case study streams	https://cran.r-project.org/web/packages/GGally/GGally.pdf
 Static case study streams	https://cran.r-project.org/web/packages/Hmisc/Hmisc.pdf
@@ -101,6 +103,7 @@ Static case study streams	https://cran.r-project.org/web/packages/ggiraph/ggirap
 Static case study streams	https://cran.r-project.org/web/packages/ggmap/ggmap.pdf
 Static case study streams	https://cran.r-project.org/web/packages/ggpol/ggpol.pdf
 Static case study streams	https://cran.r-project.org/web/packages/ggrepel/vignettes/ggrepel.html
+Static case study streams	https://cran.r-project.org/web/packages/ggthemes/ggthemes.pdf
 Static case study streams	https://cran.r-project.org/web/packages/jsonlite/jsonlite.pdf
 Static case study streams	https://cran.r-project.org/web/packages/lme4/lme4.pdf
 Static case study streams	https://cran.r-project.org/web/packages/lmerTest/lmerTest.pdf
@@ -116,7 +119,9 @@ Static case study streams	https://cran.r-project.org/web/packages/poliscidata/po
 Static case study streams	https://cran.r-project.org/web/packages/randomForest/randomForest.pdf
 Static case study streams	https://cran.r-project.org/web/packages/ranger/ranger.pdf
 Static case study streams	https://cran.r-project.org/web/packages/rnaturalearth/README.html
+Static case study streams	https://cran.r-project.org/web/packages/rstatix/rstatix.pdf
 Static case study streams	https://cran.r-project.org/web/packages/rvest/vignettes/selectorgadget.html
+Static case study streams	https://cran.r-project.org/web/packages/scales/scales.pdf
 Static case study streams	https://cran.r-project.org/web/packages/skimr/index.html
 Static case study streams	https://cran.r-project.org/web/packages/srvyr/srvyr.pdf
 Static case study streams	https://cran.r-project.org/web/packages/stringr/vignettes/regular-expressions.html
@@ -179,6 +184,7 @@ Static case study streams	https://en.wikipedia.org/wiki/Odds_ratio
 Static case study streams	https://en.wikipedia.org/wiki/Opioid_epidemic_in_the_United_States
 Static case study streams	https://en.wikipedia.org/wiki/Opium
 Static case study streams	https://en.wikipedia.org/wiki/Panel_data
+Static case study streams	https://en.wikipedia.org/wiki/Particulates
 Static case study streams	https://en.wikipedia.org/wiki/R_(programming_language)
 Static case study streams	https://en.wikipedia.org/wiki/Regression_toward_the_mean
 Static case study streams	https://en.wikipedia.org/wiki/Response_bias
@@ -218,6 +224,7 @@ Static case study streams	https://github.com//opencasestudies/ocs-bp-rural-and-u
 Static case study streams	https://github.com//opencasestudies/ocs-bp-rural-and-urban-obesity/tree/master/data/wrangled
 Static case study streams	https://github.com//opencasestudies/ocs-bp-school-shootings-dashboard
 Static case study streams	https://github.com//opencasestudies/ocs-bp-vaping-case-study/tree/master/data/imported
+Static case study streams	https://github.com//opencasestudies/ocs-bp-vaping-case-study/tree/master/data/wrangled
 Static case study streams	https://github.com//opencasestudies/ocs-bp-youth-disconnection
 Static case study streams	https://github.com//opencasestudies/ocs-bp-youth-mental-health
 Static case study streams	https://github.com//opencasestudies/ocs-bp-youth-mental-health/tree/master/data/imported
@@ -228,6 +235,7 @@ Static case study streams	https://github.com/hrbrmstr/waffle
 Static case study streams	https://github.com/ijlyttle/vembedr
 Static case study streams	https://github.com/jennybc/here_here
 Static case study streams	https://github.com/opencasestudies/OCSdata
+Static case study streams	https://github.com/opencasestudies/ocs-bp-RTC-analysis/blob/master/data/Wrangled_data.rda
 Static case study streams	https://github.com/opencasestudies/ocs-bp-RTC-wrangling
 Static case study streams	https://github.com/opencasestudies/ocs-bp-RTC-wrangling/tree/master/data
 Static case study streams	https://github.com/opencasestudies/ocs-bp-air-pollution
@@ -267,6 +275,7 @@ Static case study streams	https://journals.lww.com/acsm-healthfitness/Fulltext/2
 Static case study streams	https://landing.athenahealth.com/g/improvecare?cmp=10672941
 Static case study streams	https://lindeloev.github.io/tests-as-linear/
 Static case study streams	https://link.springer.com/article/10.1007/s11920-012-0331-6
+Static case study streams	https://link.springer.com/content/pdf/10.1007/s11135-006-9018-6.pdf
 Static case study streams	https://link.springer.com/content/pdf/10.1007/s11920-012-0331-6.pdf
 Static case study streams	https://lubridate.tidyverse.org/
 Static case study streams	https://machinelearningmastery.com/why-one-hot-encode-data-in-machine-learning/
@@ -318,6 +327,7 @@ Static case study streams	https://raw.githubusercontent.com/opencasestudies/ocs-
 Static case study streams	https://raw.githubusercontent.com/opencasestudies/ocs-bp-rural-and-urban-obesity/master/data/wrangle
 Static case study streams	https://raw.githubusercontent.com/opencasestudies/ocs-bp-school-shootings-dashboard/master/data/impo
 Static case study streams	https://raw.githubusercontent.com/opencasestudies/ocs-bp-vaping-case-study/master/data/imported/impo
+Static case study streams	https://raw.githubusercontent.com/opencasestudies/ocs-bp-vaping-case-study/master/data/wrangled/wran
 Static case study streams	https://raw.githubusercontent.com/opencasestudies/ocs-bp-youth-disconnection/master/data/raw/Major_e
 Static case study streams	https://raw.githubusercontent.com/opencasestudies/ocs-bp-youth-disconnection/master/data/raw/Making_
 Static case study streams	https://raw.githubusercontent.com/opencasestudies/ocs-bp-youth-disconnection/master/data/raw/asian_s
@@ -403,6 +413,7 @@ Static case study streams	https://www.census.gov/geographies/reference-files/201
 Static case study streams	https://www.census.gov/library/publications/2011/compendia/usa-counties-2011.html
 Static case study streams	https://www.census.gov/library/publications/2011/compendia/usa-counties-2011/file-layout.html
 Static case study streams	https://www.census.gov/programs-surveys/acs
+Static case study streams	https://www.chds.us/c/
 Static case study streams	https://www.chds.us/c/academic-programs/hsx/
 Static case study streams	https://www.chds.us/ssdb/about/
 Static case study streams	https://www.chds.us/ssdb/data-map/
@@ -458,6 +469,7 @@ Static case study streams	https://www.ncdc.noaa.gov/billions/time-series
 Static case study streams	https://www.ncdc.noaa.gov/cag/
 Static case study streams	https://www.ncdc.noaa.gov/cag/national/time-series
 Static case study streams	https://www.nceas.ucsb.edu/sites/default/files/2020-04/OverviewCoordinateReferenceSystems.pdf
+Static case study streams	https://www.nhlbi.nih.gov/sites/default/files/media/docs/obesity-evidence-review.pdf
 Static case study streams	https://www.nimh.nih.gov/health/publications/teen-depression/index.shtml
 Static case study streams	https://www.noaa.gov/
 Static case study streams	https://www.northtexashelp.com/mental-health-treatment-settings.html
