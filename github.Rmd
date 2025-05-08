@@ -24,7 +24,7 @@ github_timecourse <- readr::read_tsv(file.path("metricminer_data", "github", "gi
 
 ### Number of forks and stars
 
-```{r echo=FALSE, hide=TRUE, message=FALSE, warning=FALSE, fig.width = 10.06, fig.height = 6.29}
+```{r eval = FALSE, echo=FALSE, hide=TRUE, message=FALSE, warning=FALSE, fig.width = 10.06, fig.height = 6.29}
 github_overall %>%
      select(repo_name, num_forks, num_stars) %>%
      replace_na(list(num_forks = 0)) %>%
@@ -47,7 +47,7 @@ github_overall %>%
 
 ### Number of contributors:
 
-```{r echo = FALSE, hide = TRUE, message=FALSE, warning = FALSE, fig.width = 9.22, fig.height = 6.29}
+```{r eval = FALSE, echo = FALSE, hide = TRUE, message=FALSE, warning = FALSE, fig.width = 9.22, fig.height = 6.29}
 github_overall %>%
   mutate(repo = str_replace_all(repo_name, "opencasestudies/", ""),
          repo_type = case_when(str_detect(repo_name, "template") ~ "Template",
