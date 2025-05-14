@@ -11,16 +11,16 @@ source(file.path(root_dir, "refresh-scripts", "folder-setup.R"))
 
 folder_path <- file.path("metricminer_data", "citations")
 
+# Declare and read in config file
+yaml_file_path <- file.path(root_dir, "_config_automation.yml")
+yaml <- yaml::read_yaml(yaml_file_path)
+
 setup_folders(
   folder_path = folder_path,
   google_entry = "citation_googlesheet",
   config_file = yaml_file_path,
   data_name = "citations"
 )
-
-# Declare and read in config file
-yaml_file_path <- file.path(root_dir, "_config_automation.yml")
-yaml <- yaml::read_yaml(yaml_file_path)
 
 ### Get citation data
 
