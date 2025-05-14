@@ -19,7 +19,7 @@ setup_folders(
   folder_path = folder_path,
   google_entry = "citation_googlesheet",
   config_file = yaml_file_path,
-  data_name = "citations"
+  data_name = "citation"
 )
 
 ### Get citation data
