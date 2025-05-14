@@ -25,8 +25,6 @@ setup_folders(
   data_name = "calendly"
 )
 
-yaml <- yaml::read_yaml(yaml_file_path)
-
 ### Get calendly data
 user <- get_calendly_user()
 
