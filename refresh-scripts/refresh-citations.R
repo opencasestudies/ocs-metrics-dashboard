@@ -22,6 +22,13 @@ setup_folders(
   data_name = "citation"
 )
 
+# Authorize Google
+auth_from_secret("google",
+                 refresh_token = Sys.getenv("METRICMINER_GOOGLE_REFRESH"),
+                 access_token = Sys.getenv("METRICMINER_GOOGLE_ACCESS"),
+                 cache = TRUE
+)
+
 ### Get citation data
 message("setup done")
 all_papers <- lapply(yaml$citation_papers, function(paper) {
@@ -35,13 +42,6 @@ message("got citation counts")
 
 #store citation counts
 if (yaml$data_dest == "google") {
-
-  # Authorize Google
-  auth_from_secret("google",
-                 refresh_token = Sys.getenv("METRICMINER_GOOGLE_REFRESH"),
-                 access_token = Sys.getenv("METRICMINER_GOOGLE_ACCESS"),
-                 cache = TRUE
-  )
   
   googlesheets4::write_sheet(all_papers,
                              ss = yaml$citation_googlesheet,
