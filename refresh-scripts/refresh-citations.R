@@ -23,14 +23,15 @@ setup_folders(
 )
 
 ### Get citation data
-
+message("setup done")
 all_papers <- lapply(yaml$citation_papers, function(paper) {
+  message(paper)
   df <- get_citation_count(paper)
   return(df)
 })
 
 all_papers <- dplyr::bind_rows(all_papers)
-
+message("got citation counts")
 
 #store citation counts
 if (yaml$data_dest == "google") {
