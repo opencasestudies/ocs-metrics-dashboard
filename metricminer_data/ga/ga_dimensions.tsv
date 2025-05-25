@@ -6973,11 +6973,14 @@ OCS main - GA4	22	05	2023	United States	www.opencasestudies.org/
 OCS main - GA4	22	05	2024	Canada	www.opencasestudies.org/
 OCS main - GA4	22	05	2024	Kenya	www.opencasestudies.org/
 OCS main - GA4	22	05	2024	United States	www.opencasestudies.org/
+OCS main - GA4	22	05	2025	Canada	www.opencasestudies.org/
 OCS main - GA4	22	05	2025	Italy	www.opencasestudies.org/
 OCS main - GA4	22	05	2025	Japan	www.opencasestudies.org/
 OCS main - GA4	22	05	2025	Japan	www.opencasestudies.org/?q=schizophrenia%20
 OCS main - GA4	22	05	2025	Japan	www.opencasestudies.org/?q=schizophrenia%20case%20report%20DSM-5
 OCS main - GA4	22	05	2025	Japan	www.opencasestudies.org/?q=schizophrenia%20case%20report%22%20%2B%20%22DSM-5
+OCS main - GA4	22	05	2025	Poland	www.opencasestudies.org/
+OCS main - GA4	22	05	2025	United States	www.opencasestudies.org/
 OCS main - GA4	22	06	2021	Canada	www.opencasestudies.org/
 OCS main - GA4	22	06	2021	Peru	www.opencasestudies.org/
 OCS main - GA4	22	06	2021	South Africa	www.opencasestudies.org/
@@ -7305,6 +7308,13 @@ OCS main - GA4	23	05	2024	India	www.opencasestudies.org/
 OCS main - GA4	23	05	2024	Iran	www.opencasestudies.org/
 OCS main - GA4	23	05	2024	Poland	www.opencasestudies.org/
 OCS main - GA4	23	05	2024	United States	www.opencasestudies.org/
+OCS main - GA4	23	05	2025	Canada	www.opencasestudies.org/
+OCS main - GA4	23	05	2025	Hong Kong	www.opencasestudies.org/
+OCS main - GA4	23	05	2025	Indonesia	www.opencasestudies.org/
+OCS main - GA4	23	05	2025	Nigeria	www.opencasestudies.org/
+OCS main - GA4	23	05	2025	Russia	www.opencasestudies.org/
+OCS main - GA4	23	05	2025	United Kingdom	www.opencasestudies.org/
+OCS main - GA4	23	05	2025	United States	www.opencasestudies.org/
 OCS main - GA4	23	06	2021	United States	www.opencasestudies.org/
 OCS main - GA4	23	06	2022	Austria	www.opencasestudies.org/
 OCS main - GA4	23	06	2022	Canada	www.opencasestudies.org/
@@ -18901,6 +18911,7 @@ Static case study streams	22	05	2024	United States	www.opencasestudies.org/ocs-b
 Static case study streams	22	05	2024	United States	www.opencasestudies.org/ocs-bp-vaping-case-study/
 Static case study streams	22	05	2024	United States	www.opencasestudies.org/ocs-bp-youth-disconnection/
 Static case study streams	22	05	2025	United States	www.opencasestudies.org/ocs-bp-school-shootings-dashboard/
+Static case study streams	22	05	2025	United States	www.opencasestudies.org/ocs-bp-youth-mental-health/
 Static case study streams	22	06	2021	Canada	www.opencasestudies.org/ocs-bp-air-pollution/
 Static case study streams	22	06	2021	Canada	www.opencasestudies.org/ocs-bp-co2-emissions/
 Static case study streams	22	06	2021	Canada	www.opencasestudies.org/ocs-bp-rural-and-urban-obesity/
@@ -19315,6 +19326,12 @@ Static case study streams	23	05	2024	Canada	www.opencasestudies.org/ocs-bp-youth
 Static case study streams	23	05	2024	United States	www.opencasestudies.org/ocs-bp-co2-emissions/
 Static case study streams	23	05	2024	United States	www.opencasestudies.org/ocs-bp-opioid-rural-urban/
 Static case study streams	23	05	2024	United States	www.opencasestudies.org/ocs-bp-vaping-case-study/
+Static case study streams	23	05	2025	Malawi	www.opencasestudies.org/ocs-bp-youth-mental-health/
+Static case study streams	23	05	2025	United Kingdom	www.opencasestudies.org/ocs-bp-opioid-rural-urban/
+Static case study streams	23	05	2025	United States	www.opencasestudies.org/ocs-bp-opioid-rural-urban/
+Static case study streams	23	05	2025	United States	www.opencasestudies.org/ocs-bp-school-shootings-dashboard/
+Static case study streams	23	05	2025	United States	www.opencasestudies.org/ocs-bp-vaping-case-study/
+Static case study streams	23	05	2025	United States	www.opencasestudies.org/ocs-bp-youth-mental-health/
 Static case study streams	23	06	2021	Italy	www.opencasestudies.org/ocs-bp-co2-emissions/
 Static case study streams	23	06	2021	Pakistan	www.opencasestudies.org/ocs-bp-rural-and-urban-obesity/
 Static case study streams	23	06	2021	Philippines	www.opencasestudies.org/ocs-bp-youth-mental-health/
@@ -19735,6 +19752,7 @@ Static case study streams	24	05	2023	United States	www.opencasestudies.org/ocs-b
 Static case study streams	24	05	2023	United States	www.opencasestudies.org/ocs-bp-youth-mental-health/
 Static case study streams	24	05	2024	United States	www.opencasestudies.org/ocs-bp-RTC-analysis/
 Static case study streams	24	05	2024	United States	www.opencasestudies.org/ocs-bp-youth-mental-health/
+Static case study streams	24	05	2025	China	www.opencasestudies.org/ocs-bp-vaping-case-study/
 Static case study streams	24	06	2021	Canada	www.opencasestudies.org/ocs-bp-air-pollution/
 Static case study streams	24	06	2021	Italy	www.opencasestudies.org/ocs-bp-air-pollution/
 Static case study streams	24	06	2021	Turkey	www.opencasestudies.org/ocs-bp-rural-and-urban-obesity/
@@ -19872,11 +19890,3 @@ Static case study streams	24	10	2023	India	www.opencasestudies.org/ocs-bp-rural-
 Static case study streams	24	10	2023	India	www.opencasestudies.org/ocs-bp-youth-disconnection/
 Static case study streams	24	10	2023	Ireland	www.opencasestudies.org/ocs-bp-vaping-case-study/
 Static case study streams	24	10	2023	United States	www.opencasestudies.org/ocs-bp-co2-emissions/
-Static case study streams	24	10	2023	United States	www.opencasestudies.org/ocs-bp-diet/
-Static case study streams	24	10	2023	United States	www.opencasestudies.org/ocs-bp-opioid-rural-urban/
-Static case study streams	24	10	2023	United States	www.opencasestudies.org/ocs-bp-rural-and-urban-obesity/
-Static case study streams	24	10	2023	United States	www.opencasestudies.org/ocs-bp-vaping-case-study/
-Static case study streams	24	10	2023	United States	www.opencasestudies.org/ocs-bp-youth-disconnection/
-Static case study streams	24	10	2023	United States	www.opencasestudies.org/ocs-bp-youth-mental-health/
-Static case study streams	24	10	2024	Canada	www.opencasestudies.org/ocs-bp-opioid-rural-urban/
-Static case study streams	24	10	2024	China	www.opencasestudies.org/ocs-bp-rural-and-urban-obesity/
