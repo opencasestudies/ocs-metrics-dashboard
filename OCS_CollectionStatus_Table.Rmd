@@ -30,75 +30,75 @@ td, th {
 -->
   <tr>
     <th>Single Cell</th>
-    <th><a href="https://github.com/opencasestudies/bio-ocs-et-single-cell" target="_blank">opencasestudies/bio-ocs-et-single-cell</a></th>
-    <th><a href="https://github.com/opencasestudies/bio-ocs-et-single-cell/actions/workflows/render-all.yml" target="_blank"> <img src="https://github.com/opencasestudies/bio-ocs-et-single-cell/actions/workflows/render-all.yml/badge.svg" alt="Render output"></a></th>
-    <th><a href="https://github.com/opencasestudies/bio-ocs-et-single-cell/issues?q=is%3Aopen" target="_blank"><img src="https://img.shields.io/github/issues/opencasestudies/bio-ocs-et-single-cell" alt="Open Issues"></a></th>
-    <th><a href="https://github.com/opencasestudies/bio-ocs-et-single-cell/branches" target="_blank"> <img src="https://badgen.net/github/branches/opencasestudies/bio-ocs-et-single-cell" alt="GitHub Branches"></a></th>
-    <th><a href="https://github.com/opencasestudies/bio-ocs-et-single-cell/pulls?q=is%3Aopen" target="_blank"> <img src="https://badgen.net/github/open-prs/opencasestudies/bio-ocs-et-single-cell" alt="Open PRs"></a></th>
-    <th><a href="https://opencasestudies.org/bio-ocs-et-single-cell" target="_blank"> <img src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg" alt="Website Status"></a></th>
+    <th><a href="https://github.com/opencasestudies/ocs-bio-single-cell" target="_blank">opencasestudies/ocs-bio-single-cell</a></th>
+    <th><a href="https://github.com/opencasestudies/ocs-bio-single-cell/actions/workflows/render-all.yml" target="_blank"> <img src="https://github.com/opencasestudies/ocs-bio-single-cell/actions/workflows/render-all.yml/badge.svg" alt="Render output"></a></th>
+    <th><a href="https://github.com/opencasestudies/ocs-bio-single-cell/issues?q=is%3Aopen" target="_blank"><img src="https://img.shields.io/github/issues/opencasestudies/ocs-bio-single-cell" alt="Open Issues"></a></th>
+    <th><a href="https://github.com/opencasestudies/ocs-bio-single-cell/branches" target="_blank"> <img src="https://badgen.net/github/branches/opencasestudies/ocs-bio-single-cell" alt="GitHub Branches"></a></th>
+    <th><a href="https://github.com/opencasestudies/ocs-bio-single-cell/pulls?q=is%3Aopen" target="_blank"> <img src="https://badgen.net/github/open-prs/opencasestudies/ocs-bio-single-cell" alt="Open PRs"></a></th>
+    <th><a href="https://opencasestudies.org/ocs-bio-single-cell" target="_blank"> <img src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg" alt="Website Status"></a></th>
   </tr>
   <tr>
-    <th>Machine Learning</th>
-    <th><a href="https://github.com/opencasestudies/bio-ocs-et-ai-diffusion" target="_blank">opencasestudies/bio-ocs-et-ai-diffusion</a></th>
-    <th><a href="https://github.com/opencasestudies/bio-ocs-et-ai-diffusion/actions/workflows/render-all.yml" target="_blank"> <img src="https://github.com/opencasestudies/bio-ocs-et-ai-diffusion/actions/workflows/render-all.yml/badge.svg" alt="Render output"></a></th>
-    <th><a href="https://github.com/opencasestudies/bio-ocs-et-ai-diffusion/issues?q=is%3Aopen" target="_blank"><img src="https://img.shields.io/github/issues/opencasestudies/bio-ocs-et-ai-diffusion" alt="Open Issues"></a></th>
-    <th><a href="https://github.com/opencasestudies/bio-ocs-et-ai-diffusion/branches" target="_blank"> <img src="https://badgen.net/github/branches/opencasestudies/bio-ocs-et-ai-diffusion" alt="GitHub Branches"></a></th>
-    <th><a href="https://github.com/opencasestudies/bio-ocs-et-ai-diffusion/pulls?q=is%3Aopen" target="_blank"> <img src="https://badgen.net/github/open-prs/opencasestudies/bio-ocs-et-ai-diffusion" alt="Open PRs"></a></th>
-    <th><a href="https://opencasestudies.org/bio-ocs-et-ai-diffusion" target="_blank"> <img src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg" alt="Website Status"></a></th>
+    <th>Deep Learning</th>
+    <th><a href="https://github.com/opencasestudies/ocs-bio-ai-deep-learning" target="_blank">opencasestudies/ocs-bio-ai-deep-learning</a></th>
+    <th><a href="https://github.com/opencasestudies/ocs-bio-ai-deep-learning/actions/workflows/render-all.yml" target="_blank"> <img src="https://github.com/opencasestudies/ocs-bio-ai-deep-learning/actions/workflows/render-all.yml/badge.svg" alt="Render output"></a></th>
+    <th><a href="https://github.com/opencasestudies/ocs-bio-ai-deep-learning/issues?q=is%3Aopen" target="_blank"><img src="https://img.shields.io/github/issues/opencasestudies/ocs-bio-ai-deep-learning" alt="Open Issues"></a></th>
+    <th><a href="https://github.com/opencasestudies/ocs-bio-ai-deep-learning/branches" target="_blank"> <img src="https://badgen.net/github/branches/opencasestudies/ocs-bio-ai-deep-learning" alt="GitHub Branches"></a></th>
+    <th><a href="https://github.com/opencasestudies/ocs-bio-ai-deep-learning/pulls?q=is%3Aopen" target="_blank"> <img src="https://badgen.net/github/open-prs/opencasestudies/ocs-bio-ai-deep-learning" alt="Open PRs"></a></th>
+    <th><a href="https://opencasestudies.org/ocs-bio-ai-deep-learning" target="_blank"> <img src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg" alt="Website Status"></a></th>
   </tr>
   <tr>
     <th>Spatial Transcriptomics</th>
-    <th><a href="https://github.com/opencasestudies/bio-ocs-et-spatial-expression" target="_blank">opencasestudies/bio-ocs-et-spatial-expression</a></th>
-    <th><a href="https://github.com/opencasestudies/bio-ocs-et-spatial-expression/actions/workflows/render-all.yml" target="_blank"> <img src="https://github.com/opencasestudies/bio-ocs-et-spatial-expression/actions/workflows/render-all.yml/badge.svg" alt="Render output"></a></th>
-    <th><a href="https://github.com/opencasestudies/bio-ocs-et-spatial-expression/issues?q=is%3Aopen" target="_blank"><img src="https://img.shields.io/github/issues/opencasestudies/bio-ocs-et-spatial-expression" alt="Open Issues"></a></th>
-    <th><a href="https://github.com/opencasestudies/bio-ocs-et-spatial-expression/branches" target="_blank"> <img src="https://badgen.net/github/branches/opencasestudies/bio-ocs-et-spatial-expression" alt="GitHub Branches"></a></th>
-    <th><a href="https://github.com/opencasestudies/bio-ocs-et-spatial-expression/pulls?q=is%3Aopen" target="_blank"> <img src="https://badgen.net/github/open-prs/opencasestudies/bio-ocs-et-spatial-expression" alt="Open PRs"></a></th>
-    <th><a href="https://opencasestudies.org/bio-ocs-et-spatial-expression" target="_blank"> <img src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg" alt="Website Status"></a></th>
+    <th><a href="https://github.com/opencasestudies/ocs-bio-spatial-transcriptomics" target="_blank">opencasestudies/ocs-bio-spatial-transcriptomics</a></th>
+    <th><a href="https://github.com/opencasestudies/ocs-bio-spatial-transcriptomics/actions/workflows/render-all.yml" target="_blank"> <img src="https://github.com/opencasestudies/ocs-bio-spatial-transcriptomics/actions/workflows/render-all.yml/badge.svg" alt="Render output"></a></th>
+    <th><a href="https://github.com/opencasestudies/ocs-bio-spatial-transcriptomics/issues?q=is%3Aopen" target="_blank"><img src="https://img.shields.io/github/issues/opencasestudies/ocs-bio-spatial-transcriptomics" alt="Open Issues"></a></th>
+    <th><a href="https://github.com/opencasestudies/ocs-bio-spatial-transcriptomics/branches" target="_blank"> <img src="https://badgen.net/github/branches/opencasestudies/ocs-bio-spatial-transcriptomics" alt="GitHub Branches"></a></th>
+    <th><a href="https://github.com/opencasestudies/ocs-bio-spatial-transcriptomics/pulls?q=is%3Aopen" target="_blank"> <img src="https://badgen.net/github/open-prs/opencasestudies/ocs-bio-spatial-transcriptomics" alt="Open PRs"></a></th>
+    <th><a href="https://opencasestudies.org/ocs-bio-spatial-transcriptomics" target="_blank"> <img src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg" alt="Website Status"></a></th>
   </tr>
   <tr>
     <th>Matrix Factorization and Latent Variables</th>
-    <th><a href="https://github.com/opencasestudies/bio-ocs-et-spatial-latent-variable" target="_blank">opencasestudies/bio-ocs-et-spatial-latent-variable</a></th>
-    <th><a href="https://github.com/opencasestudies/bio-ocs-et-spatial-latent-variable/actions/workflows/render-all.yml" target="_blank"> <img src="https://github.com/opencasestudies/bio-ocs-et-spatial-latent-variable/actions/workflows/render-all.yml/badge.svg" alt="Render output"></a></th>
-    <th><a href="https://github.com/opencasestudies/bio-ocs-et-spatial-latent-variable/issues?q=is%3Aopen" target="_blank"><img src="https://img.shields.io/github/issues/opencasestudies/bio-ocs-et-spatial-latent-variable" alt="Open Issues"></a></th>
-    <th><a href="https://github.com/opencasestudies/bio-ocs-et-spatial-latent-variable/branches" target="_blank"> <img src="https://badgen.net/github/branches/opencasestudies/bio-ocs-et-spatial-latent-variable" alt="GitHub Branches"></a></th>
-    <th><a href="https://github.com/opencasestudies/bio-ocs-et-spatial-latent-variable/pulls?q=is%3Aopen" target="_blank"> <img src="https://badgen.net/github/open-prs/opencasestudies/bio-ocs-et-spatial-latent-variable" alt="Open PRs"></a></th>
-    <th><a href="https://opencasestudies.org/bio-ocs-et-spatial-latent-variable" target="_blank"> <img src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg" alt="Website Status"></a></th>
+    <th><a href="https://github.com/opencasestudies/ocs-bio-latent-variable" target="_blank">opencasestudies/ocs-bio-latent-variable</a></th>
+    <th><a href="https://github.com/opencasestudies/ocs-bio-latent-variable/actions/workflows/render-all.yml" target="_blank"> <img src="https://github.com/opencasestudies/ocs-bio-latent-variable/actions/workflows/render-all.yml/badge.svg" alt="Render output"></a></th>
+    <th><a href="https://github.com/opencasestudies/ocs-bio-latent-variable/issues?q=is%3Aopen" target="_blank"><img src="https://img.shields.io/github/issues/opencasestudies/ocs-bio-latent-variable" alt="Open Issues"></a></th>
+    <th><a href="https://github.com/opencasestudies/ocs-bio-latent-variable/branches" target="_blank"> <img src="https://badgen.net/github/branches/opencasestudies/ocs-bio-latent-variable" alt="GitHub Branches"></a></th>
+    <th><a href="https://github.com/opencasestudies/ocs-bio-latent-variable/pulls?q=is%3Aopen" target="_blank"> <img src="https://badgen.net/github/open-prs/opencasestudies/ocs-bio-latent-variable" alt="Open PRs"></a></th>
+    <th><a href="https://opencasestudies.org/ocs-bio-latent-variable" target="_blank"> <img src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg" alt="Website Status"></a></th>
   </tr>
   <tr>
     <th>Temporal Data Analysis</th>
-    <th><a href="https://github.com/opencasestudies/bio-ocs-et-temporal" target="_blank">opencasestudies/bio-ocs-et-temporal</a></th>
-    <th><a href="https://github.com/opencasestudies/bio-ocs-et-temporal/actions/workflows/render-all.yml" target="_blank"> <img src="https://github.com/opencasestudies/bio-ocs-et-temporal/actions/workflows/render-all.yml/badge.svg" alt="Render output"></a></th>
-    <th><a href="https://github.com/opencasestudies/bio-ocs-et-temporal/issues?q=is%3Aopen" target="_blank"><img src="https://img.shields.io/github/issues/opencasestudies/bio-ocs-et-temporal" alt="Open Issues"></a></th>
-    <th><a href="https://github.com/opencasestudies/bio-ocs-et-temporal/branches" target="_blank"> <img src="https://badgen.net/github/branches/opencasestudies/bio-ocs-et-temporal" alt="GitHub Branches"></a></th>
-    <th><a href="https://github.com/opencasestudies/bio-ocs-et-temporal/pulls?q=is%3Aopen" target="_blank"> <img src="https://badgen.net/github/open-prs/opencasestudies/bio-ocs-et-temporal" alt="Open PRs"></a></th>
-    <th><a href="https://opencasestudies.org/bio-ocs-et-temporal" target="_blank"> <img src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg" alt="Website Status"></a></th>
+    <th><a href="https://github.com/opencasestudies/ocs-bio-temporal" target="_blank">opencasestudies/ocs-bio-temporal</a></th>
+    <th><a href="https://github.com/opencasestudies/ocs-bio-temporal/actions/workflows/render-all.yml" target="_blank"> <img src="https://github.com/opencasestudies/ocs-bio-temporal/actions/workflows/render-all.yml/badge.svg" alt="Render output"></a></th>
+    <th><a href="https://github.com/opencasestudies/ocs-bio-temporal/issues?q=is%3Aopen" target="_blank"><img src="https://img.shields.io/github/issues/opencasestudies/ocs-bio-temporal" alt="Open Issues"></a></th>
+    <th><a href="https://github.com/opencasestudies/ocs-bio-temporal/branches" target="_blank"> <img src="https://badgen.net/github/branches/opencasestudies/ocs-bio-temporal" alt="GitHub Branches"></a></th>
+    <th><a href="https://github.com/opencasestudies/ocs-bio-temporal/pulls?q=is%3Aopen" target="_blank"> <img src="https://badgen.net/github/open-prs/opencasestudies/ocs-bio-temporal" alt="Open PRs"></a></th>
+    <th><a href="https://opencasestudies.org/ocs-bio-temporal" target="_blank"> <img src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg" alt="Website Status"></a></th>
   </tr>
   <tr>
     <th>Biocontainers</th>
-    <th><a href="https://github.com/opencasestudies/bio-ocs-bp-biocontainers" target="_blank">opencasestudies/bio-ocs-bp-biocontainers</a></th>
-    <th><a href="https://github.com/opencasestudies/bio-ocs-bp-biocontainers/actions/workflows/render-all.yml" target="_blank"> <img src="https://github.com/opencasestudies/bio-ocs-bp-biocontainers/actions/workflows/render-all.yml/badge.svg" alt="Render output"></a></th>
-    <th><a href="https://github.com/opencasestudies/bio-ocs-bp-biocontainers/issues?q=is%3Aopen" target="_blank"><img src="https://img.shields.io/github/issues/opencasestudies/bio-ocs-bp-biocontainers" alt="Open Issues"></a></th>
-    <th><a href="https://github.com/opencasestudies/bio-ocs-bp-biocontainers/branches" target="_blank"> <img src="https://badgen.net/github/branches/opencasestudies/bio-ocs-bp-biocontainers" alt="GitHub Branches"></a></th>
-    <th><a href="https://github.com/opencasestudies/bio-ocs-bp-biocontainers/pulls?q=is%3Aopen" target="_blank"> <img src="https://badgen.net/github/open-prs/opencasestudies/bio-ocs-bp-biocontainers" alt="Open PRs"></a></th>
-    <th><a href="https://opencasestudies.org/bio-ocs-bp-biocontainers" target="_blank"> <img src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg" alt="Website Status"></a></th>
+    <th><a href="https://github.com/opencasestudies/ocs-bio-biocontainers" target="_blank">opencasestudies/ocs-bio-biocontainers</a></th>
+    <th><a href="https://github.com/opencasestudies/ocs-bio-biocontainers/actions/workflows/render-all.yml" target="_blank"> <img src="https://github.com/opencasestudies/ocs-bio-biocontainers/actions/workflows/render-all.yml/badge.svg" alt="Render output"></a></th>
+    <th><a href="https://github.com/opencasestudies/ocs-bio-biocontainers/issues?q=is%3Aopen" target="_blank"><img src="https://img.shields.io/github/issues/opencasestudies/ocs-bio-biocontainers" alt="Open Issues"></a></th>
+    <th><a href="https://github.com/opencasestudies/ocs-bio-biocontainers/branches" target="_blank"> <img src="https://badgen.net/github/branches/opencasestudies/ocs-bio-biocontainers" alt="GitHub Branches"></a></th>
+    <th><a href="https://github.com/opencasestudies/ocs-bio-biocontainers/pulls?q=is%3Aopen" target="_blank"> <img src="https://badgen.net/github/open-prs/opencasestudies/ocs-bio-biocontainers" alt="Open PRs"></a></th>
+    <th><a href="https://opencasestudies.org/ocs-bio-biocontainers" target="_blank"> <img src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg" alt="Website Status"></a></th>
   </tr>
   <tr>
     <th>Version Control and Code Review</th>
-    <th><a href="https://github.com/opencasestudies/bio-ocs-bp-version-control" target="_blank">opencasestudies/bio-ocs-bp-version-control</a></th>
-    <th><a href="https://github.com/opencasestudies/bio-ocs-bp-version-control/actions/workflows/render-all.yml" target="_blank"> <img src="https://github.com/opencasestudies/bio-ocs-bp-version-control/actions/workflows/render-all.yml/badge.svg" alt="Render output"></a></th>
-    <th><a href="https://github.com/opencasestudies/bio-ocs-bp-version-control/issues?q=is%3Aopen" target="_blank"><img src="https://img.shields.io/github/issues/opencasestudies/bio-ocs-bp-version-control" alt="Open Issues"></a></th>
-    <th><a href="https://github.com/opencasestudies/bio-ocs-bp-version-control/branches" target="_blank"> <img src="https://badgen.net/github/branches/opencasestudies/bio-ocs-bp-version-control" alt="GitHub Branches"></a></th>
-    <th><a href="https://github.com/opencasestudies/bio-ocs-bp-version-control/pulls?q=is%3Aopen" target="_blank"> <img src="https://badgen.net/github/open-prs/opencasestudies/bio-ocs-bp-version-control" alt="Open PRs"></a></th>
-    <th><a href="https://opencasestudies.org/bio-ocs-bp-version-control" target="_blank"> <img src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg" alt="Website Status"></a></th>
+    <th><a href="https://github.com/opencasestudies/ocs-bio-version-control" target="_blank">opencasestudies/ocs-bio-version-control</a></th>
+    <th><a href="https://github.com/opencasestudies/ocs-bio-version-control/actions/workflows/render-all.yml" target="_blank"> <img src="https://github.com/opencasestudies/ocs-bio-version-control/actions/workflows/render-all.yml/badge.svg" alt="Render output"></a></th>
+    <th><a href="https://github.com/opencasestudies/ocs-bio-version-control/issues?q=is%3Aopen" target="_blank"><img src="https://img.shields.io/github/issues/opencasestudies/ocs-bio-version-control" alt="Open Issues"></a></th>
+    <th><a href="https://github.com/opencasestudies/ocs-bio-version-control/branches" target="_blank"> <img src="https://badgen.net/github/branches/opencasestudies/ocs-bio-version-control" alt="GitHub Branches"></a></th>
+    <th><a href="https://github.com/opencasestudies/ocs-bio-version-control/pulls?q=is%3Aopen" target="_blank"> <img src="https://badgen.net/github/open-prs/opencasestudies/ocs-bio-version-control" alt="Open PRs"></a></th>
+    <th><a href="https://opencasestudies.org/ocs-bio-version-control" target="_blank"> <img src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg" alt="Website Status"></a></th>
   </tr>
   <tr>
     <th>Big Data</th>
-    <th><a href="https://github.com/opencasestudies/bio-ocs-bp-big-data" target="_blank">opencasestudies/bio-ocs-bp-big-data</a></th>
-    <th><a href="https://github.com/opencasestudies/bio-ocs-bp-big-data/actions/workflows/render-all.yml" target="_blank"> <img src="https://github.com/opencasestudies/bio-ocs-bp-big-data/actions/workflows/render-all.yml/badge.svg" alt="Render output"></a></th>
-    <th><a href="https://github.com/opencasestudies/bio-ocs-bp-big-data/issues?q=is%3Aopen" target="_blank"><img src="https://img.shields.io/github/issues/opencasestudies/bio-ocs-bp-big-data" alt="Open Issues"></a></th>
-    <th><a href="https://github.com/opencasestudies/bio-ocs-bp-big-data/branches" target="_blank"> <img src="https://badgen.net/github/branches/opencasestudies/bio-ocs-bp-big-data" alt="GitHub Branches"></a></th>
-    <th><a href="https://github.com/opencasestudies/bio-ocs-bp-big-data/pulls?q=is%3Aopen" target="_blank"> <img src="https://badgen.net/github/open-prs/opencasestudies/bio-ocs-bp-big-data" alt="Open PRs"></a></th>
-    <th><a href="https://opencasestudies.org/bio-ocs-bp-big-data" target="_blank"> <img src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg" alt="Website Status"></a></th>
+    <th><a href="https://github.com/opencasestudies/ocs-bio-big-data" target="_blank">opencasestudies/ocs-bio-big-data</a></th>
+    <th><a href="https://github.com/opencasestudies/ocs-bio-big-data/actions/workflows/render-all.yml" target="_blank"> <img src="https://github.com/opencasestudies/ocs-bio-big-data/actions/workflows/render-all.yml/badge.svg" alt="Render output"></a></th>
+    <th><a href="https://github.com/opencasestudies/ocs-bio-big-data/issues?q=is%3Aopen" target="_blank"><img src="https://img.shields.io/github/issues/opencasestudies/ocs-bio-big-data" alt="Open Issues"></a></th>
+    <th><a href="https://github.com/opencasestudies/ocs-bio-big-data/branches" target="_blank"> <img src="https://badgen.net/github/branches/opencasestudies/ocs-bio-big-data" alt="GitHub Branches"></a></th>
+    <th><a href="https://github.com/opencasestudies/ocs-bio-big-data/pulls?q=is%3Aopen" target="_blank"> <img src="https://badgen.net/github/open-prs/opencasestudies/ocs-bio-big-data" alt="Open PRs"></a></th>
+    <th><a href="https://opencasestudies.org/ocs-bio-big-data" target="_blank"> <img src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg" alt="Website Status"></a></th>
   </tr>
   <tr>
     <th>Quarto Template</th>
