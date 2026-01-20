@@ -3,3 +3,9 @@ https://docs.google.com/forms/u/1/d/<GOOGLE_FORM_ID_HERE>/edit?usp=drive_web
 https://www.youtube.com/watch?v=<YOUTUBE_VIDEO_ID_HERE>
 https://drive.google.com/drive/u/1/folders/<SOME_FOLDER_ID_HERE>
 https://analytics.google.com/analytics/web/?authuser=1#/p<PROPERTY_ID_HERE>/reports/home
+https://github.com/opencasestudies/{REPO_NAME}
+https://github.com/opencasestudies/{REPO_NAME}/actions/workflows/render-all.yml
+https://github.com/opencasestudies/{REPO_NAME}/issues?q=is%3Aopen
+https://github.com/opencasestudies/{REPO_NAME}/branches
+https://github.com/opencasestudies/{REPO_NAME}/pulls?q=is%3Aopen
+https://opencasestudies.org/{REPO_NAME}
