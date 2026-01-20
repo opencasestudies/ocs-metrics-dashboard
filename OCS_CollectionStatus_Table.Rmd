@@ -22,7 +22,7 @@
   </tr> ends row
 -->
   <tr>
-    <th>Bio-OCS: Single Cell</th>
+    <th>Single Cell</th>
     <th><a href="https://github.com/opencasestudies/bio-ocs-et-single-cell" target="_blank">opencasestudies/bio-ocs-et-single-cell</a></th>
     <th><a href="https://github.com/opencasestudies/bio-ocs-et-single-cell/actions/workflows/render-all.yml" target="_blank"> <img src="https://github.com/opencasestudies/bio-ocs-et-single-cell/actions/workflows/render-all.yml/badge.svg" alt="Render output"></a></th>
     <th><a href="https://github.com/opencasestudies/bio-ocs-et-single-cell/issues?q=is%3Aopen" target="_blank"><img src="https://img.shields.io/github/issues/opencasestudies/bio-ocs-et-single-cell" alt="Open Issues"></a></th>
@@ -31,7 +31,7 @@
     <th><a href="https://opencasestudies.org/bio-ocs-et-single-cell" target="_blank"> <img src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg" alt="Website Status"></a></th>
   </tr>
   <tr>
-    <th>Bio-OCS: Machine Learning</th>
+    <th>Machine Learning</th>
     <th><a href="https://github.com/opencasestudies/bio-ocs-et-ai-diffusion" target="_blank">opencasestudies/bio-ocs-et-ai-diffusion</a></th>
     <th><a href="https://github.com/opencasestudies/bio-ocs-et-ai-diffusion/actions/workflows/render-all.yml" target="_blank"> <img src="https://github.com/opencasestudies/bio-ocs-et-ai-diffusion/actions/workflows/render-all.yml/badge.svg" alt="Render output"></a></th>
     <th><a href="https://github.com/opencasestudies/bio-ocs-et-ai-diffusion/issues?q=is%3Aopen" target="_blank"><img src="https://img.shields.io/github/issues/opencasestudies/bio-ocs-et-ai-diffusion" alt="Open Issues"></a></th>
@@ -40,7 +40,7 @@
     <th><a href="https://opencasestudies.org/bio-ocs-et-ai-diffusion" target="_blank"> <img src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg" alt="Website Status"></a></th>
   </tr>
   <tr>
-    <th>Bio-OCS: Spatial Transcriptomics (Expression)</th>
+    <th>Spatial Transcriptomics</th>
     <th><a href="https://github.com/opencasestudies/bio-ocs-et-spatial-expression" target="_blank">opencasestudies/bio-ocs-et-spatial-expression</a></th>
     <th><a href="https://github.com/opencasestudies/bio-ocs-et-spatial-expression/actions/workflows/render-all.yml" target="_blank"> <img src="https://github.com/opencasestudies/bio-ocs-et-spatial-expression/actions/workflows/render-all.yml/badge.svg" alt="Render output"></a></th>
     <th><a href="https://github.com/opencasestudies/bio-ocs-et-spatial-expression/issues?q=is%3Aopen" target="_blank"><img src="https://img.shields.io/github/issues/opencasestudies/bio-ocs-et-spatial-expression" alt="Open Issues"></a></th>
@@ -49,7 +49,7 @@
     <th><a href="https://opencasestudies.org/bio-ocs-et-spatial-expression" target="_blank"> <img src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg" alt="Website Status"></a></th>
   </tr>
   <tr>
-    <th>Bio-OCS: Matrix Factorization and Latent Variables (Spatial Data)</th>
+    <th>Matrix Factorization and Latent Variables</th>
     <th><a href="https://github.com/opencasestudies/bio-ocs-et-spatial-latent-variable" target="_blank">opencasestudies/bio-ocs-et-spatial-latent-variable</a></th>
     <th><a href="https://github.com/opencasestudies/bio-ocs-et-spatial-latent-variable/actions/workflows/render-all.yml" target="_blank"> <img src="https://github.com/opencasestudies/bio-ocs-et-spatial-latent-variable/actions/workflows/render-all.yml/badge.svg" alt="Render output"></a></th>
     <th><a href="https://github.com/opencasestudies/bio-ocs-et-spatial-latent-variable/issues?q=is%3Aopen" target="_blank"><img src="https://img.shields.io/github/issues/opencasestudies/bio-ocs-et-spatial-latent-variable" alt="Open Issues"></a></th>
@@ -58,7 +58,7 @@
     <th><a href="https://opencasestudies.org/bio-ocs-et-spatial-latent-variable" target="_blank"> <img src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg" alt="Website Status"></a></th>
   </tr>
   <tr>
-    <th>Bio-OCS: Temporal Data Analysis</th>
+    <th>Temporal Data Analysis</th>
     <th><a href="https://github.com/opencasestudies/bio-ocs-et-temporal" target="_blank">opencasestudies/bio-ocs-et-temporal</a></th>
     <th><a href="https://github.com/opencasestudies/bio-ocs-et-temporal/actions/workflows/render-all.yml" target="_blank"> <img src="https://github.com/opencasestudies/bio-ocs-et-temporal/actions/workflows/render-all.yml/badge.svg" alt="Render output"></a></th>
     <th><a href="https://github.com/opencasestudies/bio-ocs-et-temporal/issues?q=is%3Aopen" target="_blank"><img src="https://img.shields.io/github/issues/opencasestudies/bio-ocs-et-temporal" alt="Open Issues"></a></th>
@@ -67,7 +67,7 @@
     <th><a href="https://opencasestudies.org/bio-ocs-et-temporal" target="_blank"> <img src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg" alt="Website Status"></a></th>
   </tr>
   <tr>
-    <th>Bio-OCS: Biocontainers</th>
+    <th>Biocontainers</th>
     <th><a href="https://github.com/opencasestudies/bio-ocs-bp-biocontainers" target="_blank">opencasestudies/bio-ocs-bp-biocontainers</a></th>
     <th><a href="https://github.com/opencasestudies/bio-ocs-bp-biocontainers/actions/workflows/render-all.yml" target="_blank"> <img src="https://github.com/opencasestudies/bio-ocs-bp-biocontainers/actions/workflows/render-all.yml/badge.svg" alt="Render output"></a></th>
     <th><a href="https://github.com/opencasestudies/bio-ocs-bp-biocontainers/issues?q=is%3Aopen" target="_blank"><img src="https://img.shields.io/github/issues/opencasestudies/bio-ocs-bp-biocontainers" alt="Open Issues"></a></th>
@@ -76,7 +76,7 @@
     <th><a href="https://opencasestudies.org/bio-ocs-bp-biocontainers" target="_blank"> <img src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg" alt="Website Status"></a></th>
   </tr>
   <tr>
-    <th>Bio-OCS: Version Control and Code Review</th>
+    <th>Version Control and Code Review</th>
     <th><a href="https://github.com/opencasestudies/bio-ocs-bp-version-control" target="_blank">opencasestudies/bio-ocs-bp-version-control</a></th>
     <th><a href="https://github.com/opencasestudies/bio-ocs-bp-version-control/actions/workflows/render-all.yml" target="_blank"> <img src="https://github.com/opencasestudies/bio-ocs-bp-version-control/actions/workflows/render-all.yml/badge.svg" alt="Render output"></a></th>
     <th><a href="https://github.com/opencasestudies/bio-ocs-bp-version-control/issues?q=is%3Aopen" target="_blank"><img src="https://img.shields.io/github/issues/opencasestudies/bio-ocs-bp-version-control" alt="Open Issues"></a></th>
@@ -85,7 +85,7 @@
     <th><a href="https://opencasestudies.org/bio-ocs-bp-version-control" target="_blank"> <img src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg" alt="Website Status"></a></th>
   </tr>
   <tr>
-    <th>Bio-OCS: Big Data</th>
+    <th>Big Data</th>
     <th><a href="https://github.com/opencasestudies/bio-ocs-bp-big-data" target="_blank">opencasestudies/bio-ocs-bp-big-data</a></th>
     <th><a href="https://github.com/opencasestudies/bio-ocs-bp-big-data/actions/workflows/render-all.yml" target="_blank"> <img src="https://github.com/opencasestudies/bio-ocs-bp-big-data/actions/workflows/render-all.yml/badge.svg" alt="Render output"></a></th>
     <th><a href="https://github.com/opencasestudies/bio-ocs-bp-big-data/issues?q=is%3Aopen" target="_blank"><img src="https://img.shields.io/github/issues/opencasestudies/bio-ocs-bp-big-data" alt="Open Issues"></a></th>
