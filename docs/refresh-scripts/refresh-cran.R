@@ -16,22 +16,12 @@ folder_path <- file.path("metricminer_data", "cran")
 yaml_file_path <- file.path(root_dir, "_config_automation.yml")
 yaml <- yaml::read_yaml(yaml_file_path)
 
-# Authorize Google
-auth_from_secret("google",
-                 refresh_token = Sys.getenv("METRICMINER_GOOGLE_REFRESH"),
-                 access_token = Sys.getenv("METRICMINER_GOOGLE_ACCESS"),
-                 cache = TRUE
-)
-
 setup_folders(
   folder_path = folder_path,
   google_entry = "cran_googlesheet",
   config_file = yaml_file_path, 
   data_name = "cran"
 )
-
-yaml <- yaml::read_yaml(yaml_file_path)
-
 
 ### Get the CRAN data
 cran_stats <- cranlogs::cran_downloads(
@@ -44,6 +34,13 @@ cran_stats <- cranlogs::cran_downloads(
 
 
 if (yaml$data_dest == "google") {
+  # Authorize Google
+  auth_from_secret("google",
+                 refresh_token = Sys.getenv("METRICMINER_GOOGLE_REFRESH"),
+                 access_token = Sys.getenv("METRICMINER_GOOGLE_ACCESS"),
+                 cache = TRUE
+  )
+  
   googlesheets4::write_sheet(cran_stats,
                              ss = yaml$cran_googlesheet,
                              sheet = "cran"

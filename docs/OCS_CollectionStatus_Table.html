@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>OCS_CollectionStatus_Table.knit</title>
+
+<script src="site_libs/header-attrs-2.29/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-6.5.2/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet" />
+<link rel="shortcut icon" href="resources/images/favicon.ico" />
+ <!--- go to https://favicon.io/favicon-converter/ to upload an image to make a new favicon.io. You will need to replace the current favicon.io image with the one in the downloaded directory from the website. The current image is in the resources/images/ directory --->
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="resources/styles.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">OCS Metric Dashboard</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">
+    <span class="fa fa-home"></span>
+     
+    Home
+  </a>
+</li>
+<li>
+  <a href="citations.html">
+    <span class="fa fa-scroll"></span>
+     
+    Citations
+  </a>
+</li>
+<li>
+  <a href="cran.html">
+    <span class="fa fa-r"></span>
+     
+    CRAN
+  </a>
+</li>
+<li>
+  <a href="github.html">
+    <span class="fa fa-github"></span>
+     
+    GitHub
+  </a>
+</li>
+<li>
+  <a href="googleanalytics.html">
+    <span class="fa fa-google"></span>
+     
+    Google Analytics
+  </a>
+</li>
+<li>
+  <a href="youtube.html">
+    <span class="fa fa-play"></span>
+     
+    Youtube
+  </a>
+</li>
+<li>
+  <a href="OCS_CollectionStatus_Table.html">
+    <span class="fa fa-table"></span>
+     
+    OCS Collection
+  </a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+
+</div>
+
+
+<div id="status-of-book-repositories-in-the-bio-ocs-collection"
+class="section level1">
+<h1>Status of Book Repositories in the Bio-OCS Collection</h1>
+<style>
+/* Change font size for all table data cells (td) and headers (th) */
+td, th {
+  font-size: 10px;
+}
+</style>
+<table>
+<tr>
+<th>
+Case Study Topic
+</th>
+<th>
+Repository name
+</th>
+<th>
+Render Status
+</th>
+<th>
+Number of Open Issues
+</th>
+<th>
+Number of Branches
+</th>
+<th>
+Number of Open PRs
+</th>
+<th>
+Website up?
+</th>
+</tr>
+<!-- Comment showing row format. Note private repos will not be accessible with badgen
+  <tr> new row
+    <th>{Case Study Topic}</th>
+    <th><a href="https://github.com/opencasestudies/{REPO_NAME}" target="_blank">opencasestudies/{REPO_NAME}</a></th>
+    <th><a href="https://github.com/opencasestudies/{REPO_NAME}/actions/workflows/render-all.yml" target="_blank"> <img src="https://github.com/opencasestudies/{REPO_NAME}/actions/workflows/render-all.yml/badge.svg" alt="Render output"></a></th>
+    <th><a href="https://github.com/opencasestudies/{REPO_NAME}/issues?q=is%3Aopen" target="_blank"><img src="https://img.shields.io/github/issues/opencasestudies/{REPO_NAME}" alt="Open Issues"></a></th>
+    <th><a href="https://github.com/opencasestudies/{REPO_NAME}/branches" target="_blank"> <img src="https://badgen.net/github/branches/opencasestudies/{REPO_NAME}" alt="GitHub Branches"></a></th>
+    <th><a href="https://github.com/opencasestudies/{REPO_NAME}/pulls?q=is%3Aopen" target="_blank"> <img src="https://badgen.net/github/open-prs/opencasestudies/{REPO_NAME}" alt="Open PRs"></a></th>
+    <th><a href="https://opencasestudies.org/{REPO_NAME}" target="_blank"> <img src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg" alt="Website Status"></a></th>
+  </tr> ends row
+-->
+<tr>
+<th>
+Single Cell
+</th>
+<th>
+<a href="https://github.com/opencasestudies/ocs-bio-single-cell" target="_blank">opencasestudies/ocs-bio-single-cell</a>
+</th>
+<th>
+<a href="https://github.com/opencasestudies/ocs-bio-single-cell/actions/workflows/render-all.yml" target="_blank">
+<img src="https://github.com/opencasestudies/ocs-bio-single-cell/actions/workflows/render-all.yml/badge.svg" alt="Render output"></a>
+</th>
+<th>
+<a href="https://github.com/opencasestudies/ocs-bio-single-cell/issues?q=is%3Aopen" target="_blank"><img src="https://img.shields.io/github/issues/opencasestudies/ocs-bio-single-cell" alt="Open Issues"></a>
+</th>
+<th>
+<a href="https://github.com/opencasestudies/ocs-bio-single-cell/branches" target="_blank">
+<img src="https://badgen.net/github/branches/opencasestudies/ocs-bio-single-cell" alt="GitHub Branches"></a>
+</th>
+<th>
+<a href="https://github.com/opencasestudies/ocs-bio-single-cell/pulls?q=is%3Aopen" target="_blank">
+<img src="https://badgen.net/github/open-prs/opencasestudies/ocs-bio-single-cell" alt="Open PRs"></a>
+</th>
+<th>
+<a href="https://opencasestudies.org/ocs-bio-single-cell" target="_blank">
+<img src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg" alt="Website Status"></a>
+</th>
+</tr>
+<tr>
+<th>
+Deep Learning
+</th>
+<th>
+<a href="https://github.com/opencasestudies/ocs-bio-ai-deep-learning" target="_blank">opencasestudies/ocs-bio-ai-deep-learning</a>
+</th>
+<th>
+<a href="https://github.com/opencasestudies/ocs-bio-ai-deep-learning/actions/workflows/render-all.yml" target="_blank">
+<img src="https://github.com/opencasestudies/ocs-bio-ai-deep-learning/actions/workflows/render-all.yml/badge.svg" alt="Render output"></a>
+</th>
+<th>
+<a href="https://github.com/opencasestudies/ocs-bio-ai-deep-learning/issues?q=is%3Aopen" target="_blank"><img src="https://img.shields.io/github/issues/opencasestudies/ocs-bio-ai-deep-learning" alt="Open Issues"></a>
+</th>
+<th>
+<a href="https://github.com/opencasestudies/ocs-bio-ai-deep-learning/branches" target="_blank">
+<img src="https://badgen.net/github/branches/opencasestudies/ocs-bio-ai-deep-learning" alt="GitHub Branches"></a>
+</th>
+<th>
+<a href="https://github.com/opencasestudies/ocs-bio-ai-deep-learning/pulls?q=is%3Aopen" target="_blank">
+<img src="https://badgen.net/github/open-prs/opencasestudies/ocs-bio-ai-deep-learning" alt="Open PRs"></a>
+</th>
+<th>
+<a href="https://opencasestudies.org/ocs-bio-ai-deep-learning" target="_blank">
+<img src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg" alt="Website Status"></a>
+</th>
+</tr>
+<tr>
+<th>
+Spatial Transcriptomics
+</th>
+<th>
+<a href="https://github.com/opencasestudies/ocs-bio-spatial-transcriptomics" target="_blank">opencasestudies/ocs-bio-spatial-transcriptomics</a>
+</th>
+<th>
+<a href="https://github.com/opencasestudies/ocs-bio-spatial-transcriptomics/actions/workflows/render-all.yml" target="_blank">
+<img src="https://github.com/opencasestudies/ocs-bio-spatial-transcriptomics/actions/workflows/render-all.yml/badge.svg" alt="Render output"></a>
+</th>
+<th>
+<a href="https://github.com/opencasestudies/ocs-bio-spatial-transcriptomics/issues?q=is%3Aopen" target="_blank"><img src="https://img.shields.io/github/issues/opencasestudies/ocs-bio-spatial-transcriptomics" alt="Open Issues"></a>
+</th>
+<th>
+<a href="https://github.com/opencasestudies/ocs-bio-spatial-transcriptomics/branches" target="_blank">
+<img src="https://badgen.net/github/branches/opencasestudies/ocs-bio-spatial-transcriptomics" alt="GitHub Branches"></a>
+</th>
+<th>
+<a href="https://github.com/opencasestudies/ocs-bio-spatial-transcriptomics/pulls?q=is%3Aopen" target="_blank">
+<img src="https://badgen.net/github/open-prs/opencasestudies/ocs-bio-spatial-transcriptomics" alt="Open PRs"></a>
+</th>
+<th>
+<a href="https://opencasestudies.org/ocs-bio-spatial-transcriptomics" target="_blank">
+<img src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg" alt="Website Status"></a>
+</th>
+</tr>
+<tr>
+<th>
+Matrix Factorization and Latent Variables
+</th>
+<th>
+<a href="https://github.com/opencasestudies/ocs-bio-latent-variable" target="_blank">opencasestudies/ocs-bio-latent-variable</a>
+</th>
+<th>
+<a href="https://github.com/opencasestudies/ocs-bio-latent-variable/actions/workflows/render-all.yml" target="_blank">
+<img src="https://github.com/opencasestudies/ocs-bio-latent-variable/actions/workflows/render-all.yml/badge.svg" alt="Render output"></a>
+</th>
+<th>
+<a href="https://github.com/opencasestudies/ocs-bio-latent-variable/issues?q=is%3Aopen" target="_blank"><img src="https://img.shields.io/github/issues/opencasestudies/ocs-bio-latent-variable" alt="Open Issues"></a>
+</th>
+<th>
+<a href="https://github.com/opencasestudies/ocs-bio-latent-variable/branches" target="_blank">
+<img src="https://badgen.net/github/branches/opencasestudies/ocs-bio-latent-variable" alt="GitHub Branches"></a>
+</th>
+<th>
+<a href="https://github.com/opencasestudies/ocs-bio-latent-variable/pulls?q=is%3Aopen" target="_blank">
+<img src="https://badgen.net/github/open-prs/opencasestudies/ocs-bio-latent-variable" alt="Open PRs"></a>
+</th>
+<th>
+<a href="https://opencasestudies.org/ocs-bio-latent-variable" target="_blank">
+<img src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg" alt="Website Status"></a>
+</th>
+</tr>
+<tr>
+<th>
+Temporal Data Analysis
+</th>
+<th>
+<a href="https://github.com/opencasestudies/ocs-bio-temporal" target="_blank">opencasestudies/ocs-bio-temporal</a>
+</th>
+<th>
+<a href="https://github.com/opencasestudies/ocs-bio-temporal/actions/workflows/render-all.yml" target="_blank">
+<img src="https://github.com/opencasestudies/ocs-bio-temporal/actions/workflows/render-all.yml/badge.svg" alt="Render output"></a>
+</th>
+<th>
+<a href="https://github.com/opencasestudies/ocs-bio-temporal/issues?q=is%3Aopen" target="_blank"><img src="https://img.shields.io/github/issues/opencasestudies/ocs-bio-temporal" alt="Open Issues"></a>
+</th>
+<th>
+<a href="https://github.com/opencasestudies/ocs-bio-temporal/branches" target="_blank">
+<img src="https://badgen.net/github/branches/opencasestudies/ocs-bio-temporal" alt="GitHub Branches"></a>
+</th>
+<th>
+<a href="https://github.com/opencasestudies/ocs-bio-temporal/pulls?q=is%3Aopen" target="_blank">
+<img src="https://badgen.net/github/open-prs/opencasestudies/ocs-bio-temporal" alt="Open PRs"></a>
+</th>
+<th>
+<a href="https://opencasestudies.org/ocs-bio-temporal" target="_blank">
+<img src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg" alt="Website Status"></a>
+</th>
+</tr>
+<tr>
+<th>
+Biocontainers
+</th>
+<th>
+<a href="https://github.com/opencasestudies/ocs-bio-biocontainers" target="_blank">opencasestudies/ocs-bio-biocontainers</a>
+</th>
+<th>
+<a href="https://github.com/opencasestudies/ocs-bio-biocontainers/actions/workflows/render-all.yml" target="_blank">
+<img src="https://github.com/opencasestudies/ocs-bio-biocontainers/actions/workflows/render-all.yml/badge.svg" alt="Render output"></a>
+</th>
+<th>
+<a href="https://github.com/opencasestudies/ocs-bio-biocontainers/issues?q=is%3Aopen" target="_blank"><img src="https://img.shields.io/github/issues/opencasestudies/ocs-bio-biocontainers" alt="Open Issues"></a>
+</th>
+<th>
+<a href="https://github.com/opencasestudies/ocs-bio-biocontainers/branches" target="_blank">
+<img src="https://badgen.net/github/branches/opencasestudies/ocs-bio-biocontainers" alt="GitHub Branches"></a>
+</th>
+<th>
+<a href="https://github.com/opencasestudies/ocs-bio-biocontainers/pulls?q=is%3Aopen" target="_blank">
+<img src="https://badgen.net/github/open-prs/opencasestudies/ocs-bio-biocontainers" alt="Open PRs"></a>
+</th>
+<th>
+<a href="https://opencasestudies.org/ocs-bio-biocontainers" target="_blank">
+<img src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg" alt="Website Status"></a>
+</th>
+</tr>
+<tr>
+<th>
+Version Control and Code Review
+</th>
+<th>
+<a href="https://github.com/opencasestudies/ocs-bio-version-control" target="_blank">opencasestudies/ocs-bio-version-control</a>
+</th>
+<th>
+<a href="https://github.com/opencasestudies/ocs-bio-version-control/actions/workflows/render-all.yml" target="_blank">
+<img src="https://github.com/opencasestudies/ocs-bio-version-control/actions/workflows/render-all.yml/badge.svg" alt="Render output"></a>
+</th>
+<th>
+<a href="https://github.com/opencasestudies/ocs-bio-version-control/issues?q=is%3Aopen" target="_blank"><img src="https://img.shields.io/github/issues/opencasestudies/ocs-bio-version-control" alt="Open Issues"></a>
+</th>
+<th>
+<a href="https://github.com/opencasestudies/ocs-bio-version-control/branches" target="_blank">
+<img src="https://badgen.net/github/branches/opencasestudies/ocs-bio-version-control" alt="GitHub Branches"></a>
+</th>
+<th>
+<a href="https://github.com/opencasestudies/ocs-bio-version-control/pulls?q=is%3Aopen" target="_blank">
+<img src="https://badgen.net/github/open-prs/opencasestudies/ocs-bio-version-control" alt="Open PRs"></a>
+</th>
+<th>
+<a href="https://opencasestudies.org/ocs-bio-version-control" target="_blank">
+<img src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg" alt="Website Status"></a>
+</th>
+</tr>
+<tr>
+<th>
+Big Data
+</th>
+<th>
+<a href="https://github.com/opencasestudies/ocs-bio-big-data" target="_blank">opencasestudies/ocs-bio-big-data</a>
+</th>
+<th>
+<a href="https://github.com/opencasestudies/ocs-bio-big-data/actions/workflows/render-all.yml" target="_blank">
+<img src="https://github.com/opencasestudies/ocs-bio-big-data/actions/workflows/render-all.yml/badge.svg" alt="Render output"></a>
+</th>
+<th>
+<a href="https://github.com/opencasestudies/ocs-bio-big-data/issues?q=is%3Aopen" target="_blank"><img src="https://img.shields.io/github/issues/opencasestudies/ocs-bio-big-data" alt="Open Issues"></a>
+</th>
+<th>
+<a href="https://github.com/opencasestudies/ocs-bio-big-data/branches" target="_blank">
+<img src="https://badgen.net/github/branches/opencasestudies/ocs-bio-big-data" alt="GitHub Branches"></a>
+</th>
+<th>
+<a href="https://github.com/opencasestudies/ocs-bio-big-data/pulls?q=is%3Aopen" target="_blank">
+<img src="https://badgen.net/github/open-prs/opencasestudies/ocs-bio-big-data" alt="Open PRs"></a>
+</th>
+<th>
+<a href="https://opencasestudies.org/ocs-bio-big-data" target="_blank">
+<img src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg" alt="Website Status"></a>
+</th>
+</tr>
+<tr>
+<th>
+Quarto Template
+</th>
+<th>
+<a href="https://github.com/opencasestudies/ocs-template-quarto" target="_blank">opencasestudies/ocs-template-quarto</a>
+</th>
+<th>
+<a href="https://github.com/opencasestudies/ocs-template-quarto/actions/workflows/render-all.yml" target="_blank">
+<img src="https://github.com/opencasestudies/ocs-template-quarto/actions/workflows/render-all.yml/badge.svg" alt="Render output"></a>
+</th>
+<th>
+<a href="https://github.com/opencasestudies/ocs-template-quarto/issues?q=is%3Aopen" target="_blank"><img src="https://img.shields.io/github/issues/opencasestudies/ocs-template-quarto" alt="Open Issues"></a>
+</th>
+<th>
+<a href="https://github.com/opencasestudies/ocs-template-quarto/branches" target="_blank">
+<img src="https://badgen.net/github/branches/opencasestudies/ocs-template-quarto" alt="GitHub Branches"></a>
+</th>
+<th>
+<a href="https://github.com/opencasestudies/ocs-template-quarto/pulls?q=is%3Aopen" target="_blank">
+<img src="https://badgen.net/github/open-prs/opencasestudies/ocs-template-quarto" alt="Open PRs"></a>
+</th>
+<th>
+<a href="https://opencasestudies.org/ocs-template-quarto" target="_blank">
+<img src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg" alt="Website Status"></a>
+</th>
+</tr>
+</table>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

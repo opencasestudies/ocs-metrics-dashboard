@@ -29,8 +29,6 @@ setup_folders(
   data_name = "youtube"
 )
 
-yaml <- yaml::read_yaml(yaml_file_path)
-
 ### Get Youtube data
 youtube_metrics <- lapply(yaml$video_ids, get_youtube_video_stats) 
 names(youtube_metrics) <- yaml$video_ids

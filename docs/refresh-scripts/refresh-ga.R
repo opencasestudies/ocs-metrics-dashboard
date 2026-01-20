@@ -30,8 +30,6 @@ setup_folders(
   data_name = "ga"
 )
 
-yaml <- yaml::read_yaml(yaml_file_path)
-
 # Get the metrics
 metrics <- get_multiple_ga_metrics(property_ids = yaml$ga_property_ids, stats_type = c("metrics", "dimensions", "link_clicks"))
 

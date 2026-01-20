@@ -15,12 +15,6 @@ folder_path <- file.path("metricminer_data", "github")
 yaml_file_path <- file.path(root_dir, "_config_automation.yml")
 yaml <- yaml::read_yaml(yaml_file_path)
 
-# Authorize Google
-auth_from_secret("google",
-                 refresh_token = Sys.getenv("METRICMINER_GOOGLE_REFRESH"),
-                 access_token = Sys.getenv("METRICMINER_GOOGLE_ACCESS"),
-                 cache = TRUE
-)
 # Authorize GitHub
 auth_from_secret("github", token = Sys.getenv("METRICMINER_GITHUB_PAT"))
 
@@ -35,17 +29,23 @@ setup_folders(
   data_name = "github"
 )
 
-yaml <- yaml::read_yaml(yaml_file_path)
-
 if (yaml$data_dest == "google") {
-    googlesheets4::write_sheet(gh_metrics,
+
+  # Authorize Google
+  auth_from_secret("google",
+                 refresh_token = Sys.getenv("METRICMINER_GOOGLE_REFRESH"),
+                 access_token = Sys.getenv("METRICMINER_GOOGLE_ACCESS"),
+                 cache = TRUE
+  )
+  
+  googlesheets4::write_sheet(gh_metrics,
                                ss = yaml$gh_googlesheet,
                                sheet = "overall_stats"
-    )
-    googlesheets4::write_sheet(gh_timecourse,
+  )
+  googlesheets4::write_sheet(gh_timecourse,
                                ss = yaml$gh_googlesheet,
                                sheet = "timecourse"
-    )
+  )
 }
 
 if (yaml$data_dest == "github") {
