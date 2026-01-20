@@ -1,5 +1,12 @@
 # Status of Book Repositories in the Bio-OCS Collection
 
+<style>
+/* Change font size for all table data cells (td) and headers (th) */
+td, th {
+  font-size: 10px;
+}
+</style>
+
 <table>
   <tr>
     <th>Case Study Topic</th>
