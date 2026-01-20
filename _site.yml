@@ -23,7 +23,7 @@ navbar:
     icon: fa-play
   - text: OCS Collection
     href: OCS_CollectionStatus_Table.html
-    icon: fa-books
+    icon: fa-table
 
 output:
   html_document:
