@@ -31,7 +31,7 @@ setup_folders(
 )
 
 # Get the metrics
-metrics <- get_multiple_ga_metrics(property_ids = yaml$ga_property_ids, stats_type = c("metrics", "dimensions", "link_clicks"))
+metrics <- get_multiple_ga_metrics(property_ids = yaml$ga_property_ids, stats_type = c("metrics", "dimensions", "link_clicks", "pages"))
 
 if (yaml$data_dest == "google") {
   googlesheets4::write_sheet(metrics$metrics, 
@@ -43,12 +43,15 @@ if (yaml$data_dest == "google") {
   googlesheets4::write_sheet(metrics$link_clicks, 
                             yaml$ga_googlesheet, 
                             sheet = "link_clicks")
+  googlesheets4::write_sheet(metrics$pages,
+                             sheet = "pages")
 }
 
 if (yaml$data_dest == "github") {
   readr::write_tsv(metrics$metrics, file.path(folder_path, "ga_metrics.tsv"))
   readr::write_tsv(metrics$dimension, file.path(folder_path, "ga_dimensions.tsv"))
   readr::write_tsv(metrics$link_clicks, file.path(folder_path, "ga_link_clicks.tsv"))
+  readr::write_tsv(metrics$pages, file.path(folder_path, "ga_pages_metrics.tsv"))
 }
   
 sessionInfo()
