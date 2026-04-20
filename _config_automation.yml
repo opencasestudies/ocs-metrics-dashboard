@@ -31,7 +31,7 @@ cran_packages: [ OCSdata ]
 cran_googlesheet:
 
 ###### GitHub ######
-refresh-github: yes
+refresh-github: no
 github_repos: [
   opencasestudies/ocs-bp-school-shootings-dashboard, #in OCS Search table
   opencasestudies/ocs-bp-youth-disconnection, #in OCS Search table
