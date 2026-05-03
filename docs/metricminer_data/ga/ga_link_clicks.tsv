@@ -22,6 +22,7 @@ OCS main - GA4	https://gohugo.io/
 OCS main - GA4	https://jhu-advdatasci.github.io/2018/
 OCS main - GA4	https://leanpub.com/opencasestudies_guide
 OCS main - GA4	https://ocsteam.com/academic/
+OCS main - GA4	https://opencasestudies.github.io/
 OCS main - GA4	https://opencasestudies.github.io/img/icon.png
 OCS main - GA4	https://provost.jhu.edu/about/digital-initiatives/delta-symposium/
 OCS main - GA4	https://sourcethemes.com/academic/
@@ -49,6 +50,7 @@ Static case study streams	http://dx.doi.org/10.15585/mmwr.mm6802a1
 Static case study streams	http://flukeout.github.io/
 Static case study streams	http://ggplot2.tidyverse.org/
 Static case study streams	http://homepage.divms.uiowa.edu/~mbognar/applets/chisq.html
+Static case study streams	http://mathworld.wolfram.com/BonferroniCorrection.html
 Static case study streams	http://moralmachine.mit.edu/
 Static case study streams	http://ocw.jhsph.edu/courses/StatMethodsForSampleSurveys/PDFs/Lecture5.pdf
 Static case study streams	http://onlinestatbook.com/2/advanced_graphs/q-q_plots.html
@@ -69,6 +71,7 @@ Static case study streams	http://www.healthdata.org/about
 Static case study streams	http://www.healthdata.org/about/erin-mullany
 Static case study streams	http://www.healthdata.org/gbd
 Static case study streams	http://www.montefiore.ulg.ac.be/~kvansteen/GBIO0009-1/ac20092010/Class8/Using%20R%20for%20linear%20r
+Static case study streams	http://www.nber.org/papers/w26563.pdf
 Static case study streams	http://www.ncdrisc.org/downloads/bmi/NCD_RisC_Lancet_2017_BMI_age_standardised_world.csv
 Static case study streams	http://www.princeton.edu/~otorres/Panel101R.pdf
 Static case study streams	http://www.rebeccabarter.com/blog/2019-06-06_pre_processing/
@@ -128,6 +131,7 @@ Static case study streams	https://cran.r-project.org/web/packages/stringr/vignet
 Static case study streams	https://cran.r-project.org/web/packages/usdata/usdata.pdf
 Static case study streams	https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html
 Static case study streams	https://creativecommons.org/licenses/by-nc/3.0/us/
+Static case study streams	https://crime-data-explorer.fr.cloud.gov/downloads-and-docs
 Static case study streams	https://data.bls.gov/cgi-bin/dsrv?la
 Static case study streams	https://data.globalchange.gov/report/nca3-overview
 Static case study streams	https://data.library.virginia.edu/diagnostic-plots/
@@ -170,12 +174,15 @@ Static case study streams	https://en.wikipedia.org/wiki/File:Opium_pod_cut_to_de
 Static case study streams	https://en.wikipedia.org/wiki/Geocoding
 Static case study streams	https://en.wikipedia.org/wiki/Geographic_information_system
 Static case study streams	https://en.wikipedia.org/wiki/Hierarchical_clustering
+Static case study streams	https://en.wikipedia.org/wiki/Hmong_people
 Static case study streams	https://en.wikipedia.org/wiki/Imputation_(statistics)
 Static case study streams	https://en.wikipedia.org/wiki/Kendall_rank_correlation_coefficient?oldformat=true
 Static case study streams	https://en.wikipedia.org/wiki/Linear_regression
 Static case study streams	https://en.wikipedia.org/wiki/List_of_extreme_points_of_the_United_States
 Static case study streams	https://en.wikipedia.org/wiki/Logistic_regression
 Static case study streams	https://en.wikipedia.org/wiki/Markdown
+Static case study streams	https://en.wikipedia.org/wiki/Maximum_likelihood_estimation
+Static case study streams	https://en.wikipedia.org/wiki/More_Guns,_Less_Crime
 Static case study streams	https://en.wikipedia.org/wiki/Naval_Postgraduate_School
 Static case study streams	https://en.wikipedia.org/wiki/Nonparametric_statistics
 Static case study streams	https://en.wikipedia.org/wiki/Normalization_(statistics)
@@ -185,15 +192,18 @@ Static case study streams	https://en.wikipedia.org/wiki/Opioid_epidemic_in_the_U
 Static case study streams	https://en.wikipedia.org/wiki/Opium
 Static case study streams	https://en.wikipedia.org/wiki/Panel_data
 Static case study streams	https://en.wikipedia.org/wiki/Particulates
+Static case study streams	https://en.wikipedia.org/wiki/Pearson%27s_chi-squared_test
 Static case study streams	https://en.wikipedia.org/wiki/R_(programming_language)
 Static case study streams	https://en.wikipedia.org/wiki/Regression_toward_the_mean
 Static case study streams	https://en.wikipedia.org/wiki/Response_bias
+Static case study streams	https://en.wikipedia.org/wiki/Sampling_(statistics)?oldformat=true
 Static case study streams	https://en.wikipedia.org/wiki/Second_Amendment_to_the_United_States_Constitution
 Static case study streams	https://en.wikipedia.org/wiki/Selection_bias?oldformat=true
 Static case study streams	https://en.wikipedia.org/wiki/Simple_linear_regression
 Static case study streams	https://en.wikipedia.org/wiki/Statistical_significance
 Static case study streams	https://en.wikipedia.org/wiki/Summary_statistics
 Static case study streams	https://en.wikipedia.org/wiki/Time_series
+Static case study streams	https://en.wikipedia.org/wiki/Traumatic_stress
 Static case study streams	https://en.wikipedia.org/wiki/United_States_Bill_of_Rights
 Static case study streams	https://en.wikipedia.org/wiki/Volumetric_heat_capacity
 Static case study streams	https://en.wikipedia.org/wiki/Web_colors?oldformat=true
@@ -295,6 +305,7 @@ Static case study streams	https://opencasestudies.github.io/ocs-bp-diet/
 Static case study streams	https://opencasestudies.github.io/ocs-bp-rural-and-urban-obesity/
 Static case study streams	https://opencasestudies.github.io/ocs-bp-vaping-case-study/
 Static case study streams	https://opencasestudies.github.io/ocs-healthexpenditure/ocs-healthexpenditure.html
+Static case study streams	https://opencasestudies.org/
 Static case study streams	https://osf.io/n7r32
 Static case study streams	https://ourcodingclub.github.io/tutorials/mixed-models/
 Static case study streams	https://parsnip.tidymodels.org/reference/linear_reg.html
@@ -312,6 +323,7 @@ Static case study streams	https://raw.githubusercontent.com/opencasestudies/ocs-
 Static case study streams	https://raw.githubusercontent.com/opencasestudies/ocs-bp-air-pollution/master/data/imported/imported
 Static case study streams	https://raw.githubusercontent.com/opencasestudies/ocs-bp-air-pollution/master/data/raw/pm25_data.csv
 Static case study streams	https://raw.githubusercontent.com/opencasestudies/ocs-bp-air-pollution/master/data/wrangled/wrangled
+Static case study streams	https://raw.githubusercontent.com/opencasestudies/ocs-bp-co2-emissions/master/data/imported/co2_data
 Static case study streams	https://raw.githubusercontent.com/opencasestudies/ocs-bp-co2-emissions/master/data/raw/disasters.csv
 Static case study streams	https://raw.githubusercontent.com/opencasestudies/ocs-bp-co2-emissions/master/data/raw/energy_use_pe
 Static case study streams	https://raw.githubusercontent.com/opencasestudies/ocs-bp-co2-emissions/master/data/raw/gdp_per_capit
@@ -365,6 +377,7 @@ Static case study streams	https://statisticsbyjim.com/regression/interaction-eff
 Static case study streams	https://stattrek.com/statistics/dictionary.aspx?definition=two-sample%20$t$-test
 Static case study streams	https://stattrek.com/statistics/dictionary.aspx?definition=two-sample%20t-test
 Static case study streams	https://stringr.tidyverse.org/
+Static case study streams	https://stringr.tidyverse.org/articles/stringr.html
 Static case study streams	https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects
 Static case study streams	https://thinkr.fr/pdf/dplyr-french-cheatsheet.pdf
 Static case study streams	https://tibble.tidyverse.org/
@@ -388,10 +401,12 @@ Static case study streams	https://www.addictioncenter.com/drugs/overdose/
 Static case study streams	https://www.analyticsvidhya.com/blog/2015/08/comprehensive-guide-regression/
 Static case study streams	https://www.analyticsvidhya.com/blog/2019/05/statistics-101-introduction-central-limit-theorem/
 Static case study streams	https://www.apa.org/ptsd-guideline/patients-and-families/cognitive-behavioral
+Static case study streams	https://www.bmj.com/about-bmj/resources-readers/publications/epidemiology-uninitiated/7-longitudinal
 Static case study streams	https://www.canada.ca/en/environment-climate-change/services/climate-change/canadian-centre-climate-
 Static case study streams	https://www.canada.ca/en/environment-climate-change/services/climate-change/greenhouse-gas-emissions
 Static case study streams	https://www.cdc.gov/climateandhealth/effects/default.htm
 Static case study streams	https://www.cdc.gov/drugoverdose/images/epidemic/2018-3-Wave-Lines-Mortality.png
+Static case study streams	https://www.cdc.gov/healthyweight/assessing/bmi/adult_bmi/index.html
 Static case study streams	https://www.cdc.gov/mmwr/about.html
 Static case study streams	https://www.cdc.gov/mmwr/ecigarette_lung_injury.html
 Static case study streams	https://www.cdc.gov/mmwr/volumes/67/wr/mm675152e1.htm?s_cid=mm675152e1_w
@@ -401,8 +416,10 @@ Static case study streams	https://www.cdc.gov/mmwr/volumes/68/wr/pdfs/mm6802a1-H
 Static case study streams	https://www.cdc.gov/nchs/about/index.htm
 Static case study streams	https://www.cdc.gov/nchs/data/databriefs/db293.pdf
 Static case study streams	https://www.cdc.gov/nchs/data/nvsr/nvsr68/nvsr68_06-508.pdf
+Static case study streams	https://www.cdc.gov/nchs/data/series/sr_02/sr02_166.pdf
 Static case study streams	https://www.cdc.gov/nchs/products/databriefs/db309.htm
 Static case study streams	https://www.cdc.gov/tobacco/basic_information/e-cigarettes/Quick-Facts-on-the-Risks-of-E-cigarettes-
+Static case study streams	https://www.cdc.gov/tobacco/basic_information/e-cigarettes/images/e-cigarette-aerosol-can-contain-ha
 Static case study streams	https://www.cdc.gov/tobacco/basic_information/e-cigarettes/pdfs/ecigarette-or-vaping-products-visual
 Static case study streams	https://www.cdc.gov/tobacco/data_statistics/surveys/nyts/data/index.html
 Static case study streams	https://www.cdc.gov/tobacco/data_statistics/surveys/nyts/index.htm
@@ -424,6 +441,7 @@ Static case study streams	https://www.deadiversion.usdoj.gov/arcos/retail_drug_s
 Static case study streams	https://www.deadiversion.usdoj.gov/arcos/retail_drug_summary/report_yr_2019.pdf
 Static case study streams	https://www.epa.gov/
 Static case study streams	https://www.epa.gov/climate-indicators/understanding-connections-between-climate-change-and-human-he
+Static case study streams	https://www.epa.gov/cmaq
 Static case study streams	https://www.epa.gov/ghgemissions/inventory-us-greenhouse-gas-emissions-and-sinks
 Static case study streams	https://www.epa.gov/pm-pollution/particulate-matter-pm-basics
 Static case study streams	https://www.epa.gov/report-environment/greenhouse-gases
@@ -442,6 +460,7 @@ Static case study streams	https://www.hhs.gov/opioids/sites/default/files/2019-1
 Static case study streams	https://www.icpsr.umich.edu/icpsrweb/content/shared/ICPSR/faqs/what-is-a-codebook.html
 Static case study streams	https://www.icsi.org/guideline/depression/diagnose-and-characterize-major-depression-persistent-depr
 Static case study streams	https://www.investopedia.com/terms/g/gdp.asp
+Static case study streams	https://www.jhsph.edu/
 Static case study streams	https://www.jhsph.edu/faculty/directory/profile/1708/megan-weil-latshaw
 Static case study streams	https://www.jhsph.edu/faculty/directory/profile/1792/elizabeth-a-stuart
 Static case study streams	https://www.jhsph.edu/faculty/directory/profile/2848/renee-m-johnson
@@ -450,6 +469,7 @@ Static case study streams	https://www.lib.ncsu.edu/data/icpsrfaq
 Static case study streams	https://www.lung.org/quit-smoking/e-cigarettes-vaping/lung-health
 Static case study streams	https://www.mathsisfun.com/data/correlation.html
 Static case study streams	https://www.nasa.gov/
+Static case study streams	https://www.nature.com/
 Static case study streams	https://www.nature.com/articles/d41586-018-07135-0
 Static case study streams	https://www.nature.com/articles/s41586-019-1171-x.pdf
 Static case study streams	https://www.nber.org/papers/w23510.pdf

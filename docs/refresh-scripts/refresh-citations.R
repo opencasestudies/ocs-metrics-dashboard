@@ -15,21 +15,12 @@ folder_path <- file.path("metricminer_data", "citations")
 yaml_file_path <- file.path(root_dir, "_config_automation.yml")
 yaml <- yaml::read_yaml(yaml_file_path)
 
-# Authorize Google
-auth_from_secret("google",
-                 refresh_token = Sys.getenv("METRICMINER_GOOGLE_REFRESH"),
-                 access_token = Sys.getenv("METRICMINER_GOOGLE_ACCESS"),
-                 cache = TRUE
-)
-
 setup_folders(
   folder_path = folder_path,
   google_entry = "citation_googlesheet",
   config_file = yaml_file_path,
   data_name = "citation"
 )
-
-yaml <- yaml::read_yaml(yaml_file_path)
 
 ### Get citation data
 
@@ -41,8 +32,16 @@ all_papers <- lapply(yaml$citation_papers, function(paper) {
 all_papers <- dplyr::bind_rows(all_papers)
 
 
-
+#store citation counts
 if (yaml$data_dest == "google") {
+
+  # Authorize Google
+  auth_from_secret("google",
+                 refresh_token = Sys.getenv("METRICMINER_GOOGLE_REFRESH"),
+                 access_token = Sys.getenv("METRICMINER_GOOGLE_ACCESS"),
+                 cache = TRUE
+  )
+  
   googlesheets4::write_sheet(all_papers,
                              ss = yaml$citation_googlesheet,
                              sheet = "citations"

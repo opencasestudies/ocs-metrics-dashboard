@@ -35,7 +35,6 @@ setup_folders(
 google_forms <- get_multiple_forms(form_ids = yaml$google_forms)
 form_names <- names(google_forms)
 
-yaml <- yaml::read_yaml(yaml_file_path)
 
 if (yaml$data_dest == "google") {
   lapply(form_names, function(form_name) {
